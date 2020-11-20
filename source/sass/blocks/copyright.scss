@@ -1,0 +1,30 @@
+.copyright {
+  text-decoration: none;
+  color: $special_dark-grey;
+
+  & svg {
+    fill: $special_dark-grey;
+  }
+
+  &:hover svg {
+    fill: $basic_green;
+  }
+
+  &:focus svg {
+    fill: $bg-green;
+    opacity: 0.3;
+  }
+}
+
+.copyright__name {
+  @include font-set (normal, normal, 16px, 18px);
+  font-family: "Arial", sans-serif;
+
+  & span {
+    text-transform: none;
+  }
+
+  &:focus {
+    color: $special_dark-grey-opacity;
+  }
+}

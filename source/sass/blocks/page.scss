@@ -1,0 +1,9 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  @include font-set (normal, normal, 14px, 18px);
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}

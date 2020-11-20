@@ -1,0 +1,58 @@
+.nutrition-program {
+  @include font-set (normal, normal, 24px, 37px);
+}
+
+.nutrition-program__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.nutrition-program__item {
+  position: relative;
+  background-color: $gray-basic;
+
+  &:first-child::before {
+    content: "";
+    width: 50px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-image: url("../img/catsit.svg");
+    position: absolute;
+    left: 400px;
+  }
+
+  &:last-child::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-image: url("../img/catgo.svg");
+    position: absolute;
+    left: 400px;
+  }
+}
+
+.nutrition-program__description {
+  @include font-set (normal,normal, 14px, 18px);
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+  border-bottom: 1px solid $border-bottom-program;
+}
+
+.nutrition-program__link {
+  @include font-set (normal, normal, 16px, 16px);
+  color: $basic-black;
+  text-decoration: none;
+
+  & svg {
+    fill: $basic-black;
+    stroke: $basic-black;
+  }
+
+  &:active svg {
+    color: $main-menu-hover;
+    fill: $main-menu-hover;
+  }
+}
