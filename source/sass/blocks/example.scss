@@ -1,0 +1,86 @@
+.example {
+  text-align: center;
+  background-color: $bg-example;
+}
+
+.example__title {
+  @include font-set (normal, normal, 36px, 40px);
+  text-transform: none;
+}
+
+.example__text {
+  @include font-set (normal, normal, 14px, 18px);
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+  text-align: left;
+  width: 279px;
+}
+
+.example__weight {
+  @include font-set (normal, normal, 24px, 24px);
+  text-align: center;
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid $special_grey;
+  border-radius: 3px;
+  margin-bottom: 100px;
+
+  & legend {
+    @include font-set (normal, normal, 12px, 12px);
+    position: absolute;
+    color: $special_grey;
+    bottom: -20%;
+    left: 25%;
+    width: 70px;
+    background-color: $bg-example;
+    font-family: "Arial", sans-serif;
+    text-transform: none;
+  }
+}
+
+.example__time {
+  @include font-set (normal, normal, 24px, 24px);
+  text-align: center;
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid $special_grey;
+  border-radius: 3px;
+  margin-bottom: 100px;
+
+  & legend {
+    @include font-set (normal, normal, 12px, 12px);
+    position: absolute;
+    color: $special_grey;
+    bottom: -20%;
+    left: 25%;
+    width: 70px;
+    background-color: $bg-example;
+    font-family: "Arial", sans-serif;
+    text-transform: none;
+  }
+}
+
+.example__cost-nutrition {
+  @include font-set (normal, normal, 14px, 20px);
+}
+
+.example__slider-wrap {
+  position: relative;
+  width: 86px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid $special_grey;
+  background-color: $basic-white;
+}
+
+.example__slider-toggle {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 35px;
+  height: 6px;
+  background: $basic_green;
+  border-radius: 6px;
+}

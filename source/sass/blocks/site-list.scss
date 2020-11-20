@@ -1,0 +1,29 @@
+.site-list {
+  @include font-set (normal, 700, 20px, 20px);
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  list-style: none;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border: 1px solid $special_grey-4;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: $basic-black;
+
+  &:hover {
+    color: $main-menu-hover;
+  }
+
+  &:focus {
+    color: $main-menu-down;
+  }
+
+  &:active {
+    border-bottom: 2px solid $basic_green;
+  }
+}

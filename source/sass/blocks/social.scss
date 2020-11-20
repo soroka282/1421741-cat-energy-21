@@ -1,0 +1,29 @@
+.social {
+  text-align: center;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid $border-bottom-program;
+  border-bottom: 1px solid $border-bottom-program;
+}
+
+.social__item {
+  & svg {
+    fill: $special_grey-3;
+  }
+
+  &:last-child {
+    fill: $basic-white;
+  }
+
+  &:hover svg {
+    fill: $basic_green;
+  }
+
+  &:focus svg {
+    fill: $main-menu-down;
+  }
+}

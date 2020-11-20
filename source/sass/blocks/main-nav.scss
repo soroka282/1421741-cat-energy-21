@@ -1,0 +1,30 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 24px;
+  border: none;
+  top: -50px;
+  left: 50px;
+  border-bottom: 1.5px solid $basic-black;
+
+  &::before {
+    content: "";
+    left: 0;
+    top: -5px;
+    width: 24px;
+    position: absolute;
+    border-bottom: 1.5px solid $basic-black;
+  }
+
+  &::after {
+    content: "";
+    top: 8px;
+    left: 0;
+    width: 24px;
+    position: absolute;
+    border-bottom: 1.5px solid $basic-black;
+  }
+}
