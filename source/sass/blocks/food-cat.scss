@@ -9,8 +9,8 @@
 }
 
 .food-cat__link {
-  text-transform: uppercase;
   @include font-set (normal, normal, 16px, 20px);
+  text-transform: uppercase;
   color: $special_dark-grey-1;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .food-cat__more-link {
-  @include font-set (normal, normal, 16px, 0px);
+  @include font-set (normal, normal, 16px, 0);
   text-transform: uppercase;
   color: $special_dark-grey;
 }
