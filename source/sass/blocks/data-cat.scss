@@ -1,0 +1,14 @@
+.data-cat {
+  @include font-set (normal, normal, 16px, 18px);
+}
+
+.data-cat__group {
+  border: none;
+}
+
+.data-cat__input {
+  border: 1px solid $input-border;
+  box-sizing: border-box;
+  width: 204px;
+  height: 45px;
+}

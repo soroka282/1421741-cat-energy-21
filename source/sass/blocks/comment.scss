@@ -1,0 +1,17 @@
+.comment {
+  text-align: left;
+}
+
+.comment__title {
+  @include font-set (normal, normal, 24px, 26px);
+  text-transform: none;
+}
+
+.comment__input {
+  border: 1px solid $input-border;
+  box-sizing: border-box;
+  width: 280px;
+  height: 150px;
+  text-transform: uppercase;
+  resize: none;
+}

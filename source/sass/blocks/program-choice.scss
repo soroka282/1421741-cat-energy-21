@@ -1,0 +1,11 @@
+.program-choice {
+  @include font-set (normal, normal, 36x, 36px);
+}
+
+.program-choice__title {
+  text-transform: none;
+}
+
+.program-choice__description {
+  @include font-set (normal, normal, 14px, 18px);
+}
