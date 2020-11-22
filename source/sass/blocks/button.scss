@@ -1,0 +1,11 @@
+.button {
+  @include font-set (normal,normal, 16px, 20px);
+  border: none;
+  cursor: pointer;
+  background-color: $bg-example;
+
+  &:hover {
+    border-bottom: 1px solid $main-menu-down;
+    outline: none;
+  }
+}
