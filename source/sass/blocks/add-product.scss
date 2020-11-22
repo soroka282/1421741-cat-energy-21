@@ -1,0 +1,12 @@
+.add-product {
+  text-transform: none;
+}
+
+.add-product__title {
+  @include font-set (normal, normal, 24px, 24px);
+}
+
+.add-product__wrapper {
+  border-top: 1px solid $special_grey;
+  border-bottom: 1px solid $special_grey;
+}
