@@ -1,0 +1,37 @@
+.food-cat {
+  @include font-set (normal, normal, 12px, 16px);
+  text-transform: none;
+}
+
+.food-cat__wrapper {
+  border-top: 1px solid $special_grey-2;
+  border-bottom: 1px solid $special_grey-2;
+}
+
+.food-cat__link {
+  @include font-set (normal, normal, 16px, 20px);
+  text-transform: uppercase;
+  color: $special_dark-grey-1;
+}
+
+.food-cat__string {
+  font-family: "Arial", sans-serif;
+  color: $special_dark-grey;
+}
+
+.food-cat__more {
+  @include font-set (normal, normal, 16px, 20px);
+  color: $more-caption;
+  text-transform: uppercase;
+}
+
+.food-cat__more-caption {
+  font-family: "Arial", sans-serif;
+  color: $special_dark-grey;
+}
+
+.food-cat__more-link {
+  @include font-set (normal, normal, 16px, 0);
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}

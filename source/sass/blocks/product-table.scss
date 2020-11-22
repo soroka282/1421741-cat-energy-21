@@ -1,0 +1,21 @@
+.product-table {
+  text-align: center;
+}
+
+.product-table__name {
+  @include font-set (normal, normal, 16px, 16px);
+  color: $special_dark-grey-1;
+  text-transform: uppercase;
+}
+
+.product-table__string {
+  @include font-set (normal, normal, 14px, 14px);
+  font-family: "Arial", sans-serif;
+  color: $special_dark-grey;
+}
+
+.food-cat-toggle,
+.add-product__toggle {
+  font-size: 16px;
+  line-height: 0px;
+}

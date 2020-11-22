@@ -1,0 +1,9 @@
+.main-page {
+  position: relative;
+  text-align: center;
+}
+
+.main-page__title {
+  @include font-set (normal, normal, 36px, 36px);
+  text-transform: none;
+}
