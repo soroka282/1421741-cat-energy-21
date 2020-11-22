@@ -1,0 +1,20 @@
+.data-owner {
+  @include font-set (normal, normal, 16px, 18px);
+}
+
+.data-owner__title {
+  @include font-set (normal, normal, 24px, 26px);
+  text-transform: none;
+}
+
+.data-owner__group {
+  border: none;
+}
+
+.data-owner__input {
+  border: 1px solid $input-border;
+  box-sizing: border-box;
+  width: 219px;
+  height: 45px;
+  text-transform: uppercase;
+}

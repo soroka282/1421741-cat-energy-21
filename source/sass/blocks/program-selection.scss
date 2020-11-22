@@ -1,11 +1,9 @@
 .program-selection {
-  @include font-set (normal, normal, 36x, 36px);
+  @include font-set (normal, normal, 16px, 18px);
 }
 
-.program-selection__title {
-  text-transform: none;
-}
-
-.program-selection__description {
-  @include font-set (normal, normal, 14px, 18px);
+.program-selection__group {
+  border: none;
+  border-top: 1px solid $border-bottom-program;
+  border-bottom: 1px solid $border-bottom-program;
 }
