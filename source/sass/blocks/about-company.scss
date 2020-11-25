@@ -2,14 +2,58 @@
   text-align: center;
 }
 
+.about-company__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid red;
+}
+
+.about-company__inner {
+  width: 280px;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
+    margin-left: 110px;
+  }
+}
+
 .about-company__invitation {
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .about-company__adress {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: none;
   color: $special_dark-grey;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.about-company__map {
+
 }

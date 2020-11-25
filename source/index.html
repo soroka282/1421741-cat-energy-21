@@ -2,6 +2,7 @@
 <html class='page' lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'/>
     <title>HTML Academy: Кэт энерджи</title>
     <link href='css/style.css' rel='stylesheet'>
   </head>
@@ -10,24 +11,29 @@
 
     <header class='page-header'>
       <div class='page-header__wrapper'>
+        <div class='page-header__inner'>
           <img class='page-header__logo' src='https://via.placeholder.com/33x37' alt='Логотип сайта'>
           <img class='page-header__site-name' src='https://via.placeholder.com/101x18' alt='Cat energy'>
-      <nav class='main-nav'>
-        <button class='main-nav__toggle' type='button'><span class='visually-hidden'>Открыть меню</span></button>
-        <ul class='main-nav__list site-list'>
-          <li class='site-list__item site-list__item--active'><a href='#'>Главная</a></li>
-          <li class='site-list__item'><a href='catalog.html'>Каталог продукции</a></li>
-          <li class='site-list__item'><a href='form.html'>Подбор программы</a></li>
-        </ul>
-      </nav>
-    </div>
+          <button class='page-header__toggle' type='button'><span class='visually-hidden'>Открыть меню</span></button>
+        </div>
+        <nav class='main-nav'>
+          <ul class='main-nav__list site-list'>
+            <li class='site-list__item site-list__item--active'><a href='#'>Главная</a></li>
+            <li class='site-list__item'><a href='catalog.html'>Каталог продукции</a></li>
+            <li class='site-list__item'><a href='form.html'>Подбор программы</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class='page-main'>
       <section class='caption'>
         <div class='caption__wrapper'>
-          <h1 class='caption__text'>Функциональное питание для котов</h1>
-          <p class='caption__slogan'>Занялся собой? Займись и котом!</p>
+          <div class='caption__inner'>
+            <h1 class='caption__text'>Функциональное питание для котов</h1>
+            <p class='caption__slogan'>Занялся собой? Займись и котом!</p>
+          </div>
+
           <img class='caption__image' src='https://via.placeholder.com/280x270' alt='Пачка кошачьего корма'>
           <button class='caption__toggle-choice button'>Подобрать программу</button>
         </div>
@@ -39,7 +45,7 @@
           <ul class='nutrition-program__list'>
             <li class='nutrition-program__item nutrition-program__item--losing-weight'>
               <h2 class='nutrition-program__title'>Похудение</h2>
-              <p class='nutrition-program__description'>Ваш кот весит больше собаки и почти утратил
+              <p class='nutrition-program__description nutrition-program__description--border'>Ваш кот весит больше собаки и почти утратил
                 способность лазить по деревьям?
                 Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.</p>
@@ -68,22 +74,22 @@
         <div class='advantages-product__wrapper'>
           <h2 class='advantages-product__title'>Как это работает</h2>
           <ul class='advantages-product__list'>
-            <li class='advantages-product__item advantages-product__item--good'>
+            <li class='advantages-product__item '>
               <p class='advantages-product__description'>Функциональное питание
               содержит только полезные
               питательные вещества.</p>
             </li>
-            <li class='advantages-product__item advantages-product__item--comfortably'>
+            <li class='advantages-product__item'>
               <p class='advantages-product__description'>Выпускается в виде порошка,
     который нужно лишь залить
     кипятком и готово.</p>
             </li>
-            <li class='advantages-product__item advantages-product__item--replace'>
+            <li class='advantages-product__item'>
               <p class='advantages-product__description'>Замените один-два приема
     обычной еды на наше
     функциональное питание.</p>
             </li>
-            <li class='advantages-product__item advantages-product__item--changes'>
+            <li class='advantages-product__item'>
               <p class='advantages-product__description'>Уже через месяц наслаждайтесь
               изменениями к лучшему вашего питомца!</p>
             </li>
@@ -99,34 +105,40 @@
             результат без изнуряющих тренировок!
             При этом он не менял своих привычек и
             по-прежнему спит по 16 часов в день.</p>
-
-          <fieldset class='example__weight'>
-            <legend>снижение веса</legend>
-            <p>5 кг</p>
-          </fieldset>
-          <fieldset class='example__time'>
-            <legend>затрачено времени</legend>
-            <p>60 дней</p>
-          </fieldset>
-
-          <p class='example__cost-nutrition'>Затраты на питание : 15000 руб.</p>
-          <img class='example__cat-fat' src='https://via.placeholder.com/311x232' alt='Толстый кот'>
-          <img class='example__cat-slim visually-hidden' src='https://via.placeholder.com/311x232' alt='Худой кот'>
-          <button class='example__toggle-prev button-example' type='button'>Было</button>
-          <div class='example__slider-wrap'>
-            <div class='example__slider-toggle'></div>
+          <div class='example__inner'>
+            <fieldset class='example__weight'>
+              <legend>снижение веса</legend>
+              <p>5 кг</p>
+            </fieldset>
+            <fieldset class='example__time'>
+              <legend>затрачено времени</legend>
+              <p>60 дней</p>
+            </fieldset>
+            <p class='example__cost-nutrition'>Затраты на питание : 15000 руб.</p>
           </div>
-          <button class='example__toggle-next button-example' type='button'>Стало</button>
+          <div class=example__cat>
+            <img class='example__cat-fat' src='https://via.placeholder.com/311x232' alt='Толстый кот'>
+            <img class='example__cat-slim visually-hidden' src='https://via.placeholder.com/311x232' alt='Худой кот'>
+          </div>
+          <div class=example__wrap-slider-toggle>
+            <button class='example__toggle-prev button-example' type='button'>Было</button>
+            <div class='example__slider-wrap'>
+              <div class='example__slider-toggle'></div>
+            </div>
+            <button class='example__toggle-next button-example' type='button'>Стало</button>
+          </div>
         </div>
       </section>
 
       <section class='about-company'>
         <div class='about-company__wrapper'>
           <h2 class='visually-hidden'>О компании</h2>
-          <p class='about-company__invitation'>приглашаем к сотрудничеству дилеров!<p>
-          <p class='about-company__adress'>ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+          <div class='about-company__inner'>
+            <p class='about-company__invitation'>приглашаем к сотрудничеству дилеров!<p>
+            <p class='about-company__adress'>ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург</p>
+          </div>
           <img class='about-company__map' src='https://via.placeholder.com/320x362' alt='Карта офиса Cat Energy'>
         </div>
       </section>
@@ -159,7 +171,7 @@
         </section>
 
         <a class='footer-page__copyright copyright' href='https://htmlacademy.ru/intensive/adaptive'>
-          <p class='copyright__name'>HTML <span>Academy</span></p>
+          <p class='copyright__name'>HTML <div>Academy</div></p>
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
           </svg>

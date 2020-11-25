@@ -20,8 +20,12 @@
   @include font-set (normal, normal, 16px, 18px);
   font-family: "Arial", sans-serif;
 
-  & span {
+  & div {
     text-transform: none;
+  }
+
+  &:hover {
+    color: $basic_green;
   }
 
   &:focus {
