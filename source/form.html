@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href='css/style.css' rel='stylesheet'>
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'/>
   </head>
 
   <body class='page__body'>
 
     <header class='page-header'>
       <div class='page-header__wrapper'>
+        <div class='page-header__inner'>
           <img class='page-header__logo' src='https://via.placeholder.com/33x37' alt='Логотип сайта'>
           <img class='page-header__site-name' src='https://via.placeholder.com/101x18' alt='Cat energy'>
+          <button class='page-header__toggle' type='button'><span class='visually-hidden'>Открыть меню</span></button>
+        </div>
       <nav class='main-nav'>
-        <button class='main-nav__toggle' type='button'><span class='visually-hidden'>Открыть меню</span></button>
         <ul class='main-nav__list site-list'>
           <li class='site-list__item'><a href='index.html'>Главная</a></li>
           <li class='site-list__item site-list__item--active'><a href='catalog.html'>Каталог продукции</a></li>
@@ -40,7 +43,7 @@
               <input class='data-cat__input' type='text' id='name-cat' name='name-cat' placeholder='Барсик' required>
               <label class='data-cat__name' for='weight-cat'>Вес(кг):*</label>
               <input class='data-cat__input' type='number' id='weight-cat' name='weight-cat' placeholder='7' required>
-              <label class='data-cat__name' for='age-cat'>Возраст:</label>
+              <label class='data-cat__name' for='age-cat'>Возраст (лет):</label>
               <input class='data-cat__input' type='number' id='age-cat' name='age-cat' placeholder='7'>
             </fieldset>
           </div>
@@ -62,7 +65,9 @@
 
         <section class='data-owner'>
           <div class='data-owner__wrapper'>
-            <h2 class='data-owner__title'>Контактные данные (Владельца кота)</h2>
+            <div class='data-owner__inner'>
+              <h2 class='data-owner__title'>Контактные данные (владельца кота)</h2>
+            </div>
             <fieldset class='data-owner__group'>
               <label class='data-owner__name' for='email'>E-mail:*</label>
               <input class='data-owner__input' type='email' id='email' name='email-owner' placeholder='kuklachev@gmail.com' required>
@@ -73,15 +78,20 @@
         </section>
 
         <section class='comment'>
-          <div class='comment__wrapper'>
+          <div class='comment__inner'>
             <h2 class='comment__title'>Комментарий</h2>
+          </div>
+          <div class='comment__wrapper'>
             <textarea class='comment__input' placeholder='Расскажите обо всех повадках кота'></textarea>
           </div>
         </section>
 
         <section class='additionally'>
           <div class='additionally__wrapper'>
-            <h2 class='additionally__title'>Дополнительно</h2>
+            <div class='additionally__inner'>
+              <h2 class='additionally__title'>Дополнительно</h2>
+            </div>
+
             <fieldset class='additionally__group'>
               <input class='additionally__toggle' value='Сахарозаменитель' type='checkbox' name='additionally' id='sweetener'>
               <label class='additionally__name' for='sweetener'>Сахарозаменитель</label>
@@ -107,10 +117,12 @@
       <section class='about-company'>
         <div class='about-company__wrapper'>
           <h2 class='visually-hidden'>О компании</h2>
-          <p class='about-company__invitation'>приглашаем к сотрудничеству дилеров!<p>
-          <p class='about-company__adress'>ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+          <div class='about-company__inner'>
+            <p class='about-company__invitation'>приглашаем к сотрудничеству дилеров!<p>
+            <p class='about-company__adress'>ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург</p>
+          </div>
           <img class='about-company__map' src='https://via.placeholder.com/320x362' alt='Карта офиса Cat Energy'>
         </div>
       </section>

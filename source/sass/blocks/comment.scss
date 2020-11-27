@@ -2,16 +2,64 @@
   text-align: left;
 }
 
+.comment__inner {
+  position: relative;
+  margin: 0;
+  min-width: 280px;
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: 2px solid $basic_green;
+}
+
 .comment__title {
   @include font-set (normal, normal, 24px, 26px);
   text-transform: none;
+  position: absolute;
+  background-color: $basic_white;
+  position: absolute;
+  top: -38px;
+  width: 16vh;
+  padding-right: 5px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    margin-left: 30px;
+    top: -55px;
+    min-width: 182px;
+  }
+}
+
+.comment__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media(min-width: $tablet-width) {
+    margin-left: 71px;
+    margin-right: 30px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .comment__input {
+  color: $special_dark-grey;
   border: 1px solid $input-border;
+  font-family: "Oswald";
   box-sizing: border-box;
-  width: 280px;
-  height: 150px;
+  min-width: 100%;
+  min-height: 150px;
   text-transform: uppercase;
   resize: none;
+
+  @media(min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

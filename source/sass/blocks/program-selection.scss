@@ -1,9 +1,94 @@
 .program-selection {
   @include font-set (normal, normal, 16px, 18px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-selection__wrapper {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 71px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .program-selection__group {
+  position: relative;
+  margin: 0;
+  padding: 0;
   border: none;
   border-top: 1px solid $border-bottom-program;
   border-bottom: 1px solid $border-bottom-program;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-bottom-program;
+  }
+}
+
+.program-selection__toggle {
+  position: relative;
+  display: none;
+
+
+  &:checked + .program-selection__name::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: -36px;
+    top: 3px;
+    border-radius: 100%;
+    background:$basic_green;
+    border: 1px solid $special_grey;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      left: -33px;
+      top: 5px;
+    }
+  }
+}
+
+.program-selection__name {
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 45px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 87px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -45px;
+    top: -5px;
+    border-radius: 100%;
+    border: 1px solid $special_grey;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }

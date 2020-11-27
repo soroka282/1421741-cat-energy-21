@@ -1,12 +1,124 @@
 .additionally {
   @include font-set (normal, normal, 16px, 18px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.additionally__inner {
+  position: relative;
+  margin: 0;
+  min-width: 280px;
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: 2px solid $basic_green;
 }
 
 .additionally__title {
   @include font-set (normal, normal, 24px, 26px);
   text-transform: none;
+  position: absolute;
+  background-color: $basic_white;
+  position: absolute;
+  top: -38px;
+  width: 19vh;
+  padding-right: 5px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    margin-left: 30px;
+    top: -55px;
+    min-width: 230px;
+  }
 }
 
 .additionally__group {
+  margin-left: 20px;
+  margin-right: 20px;
   border: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 40px;
+  outline: 1px solid red;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 600px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 71px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+    flex-wrap: nowrap;
+  }
+}
+
+.additionally__toggle {
+  display: none;
+  position: relative;
+
+  &:checked + .additionally__name::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: -28px;
+    top: 0px;
+    background-image: url("../img/vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      left: -45px;
+      top: 5px;
+    }
+  }
+}
+
+.additionally__name {
+  margin-top: 20px;
+  position: relative;
+  margin-left: 10px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 130px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: -35px;
+    top: -5px;
+    border: 1px solid $special_grey;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      left: -55px;
+    }
+  }
 }
