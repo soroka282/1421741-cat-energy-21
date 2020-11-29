@@ -1,22 +1,20 @@
 .about-company {
-  text-align: center;
+  background-color: $gray-basic;
 }
 
 .about-company__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .about-company__inner {
-  width: 280px;
+  min-width: 280px;
   margin-right: 20px;
   margin-left: 20px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     margin-right: 30px;
@@ -24,18 +22,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 110px;
-    margin-left: 110px;
+    margin: 0;
+    position: absolute;
+    background-color: $basic_white;
+    width: 570px;
+    min-height: 201px;
+    justify-content: center;
+    padding-top: 50px;
   }
 }
 
 .about-company__invitation {
   font-size: 16px;
   line-height: 18px;
+  width: 140px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 21px;
+    text-align: left;
   }
 }
 
@@ -45,9 +50,16 @@
   line-height: 20px;
   text-transform: none;
   color: $special_dark-grey;
+  width: 140px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-left: 100px;
   }
 }
