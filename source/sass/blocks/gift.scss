@@ -1,0 +1,13 @@
+.gift {
+  width: 280px;
+  height: 289px;
+  background: url("../img/giftphotomobile.jpg");
+}
+
+.gift__text {
+  @include font-set (normal, normal, 16px, 20px);
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+  color: $basic-white;
+  text-align: center;
+}
