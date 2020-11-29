@@ -1,11 +1,9 @@
 .page-header {
   text-align: center;
-  outline: 1px solid purple;
 }
 
-
 .page-header__wrapper {
-  outline: 1px solid red;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -31,7 +29,6 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $special_grey-4;
-  outline: 1px solid blue;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -58,7 +55,7 @@
   }
 }
 
-.page-header__site-name{
+.page-header__site-name {
   margin-right: 30px;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +73,7 @@
   position: relative;
   width: 24px;
   border: none;
-  top: 0px;
+  top: 0;
   right: 25px;
   border-bottom: 1.5px solid $basic-black;
 
@@ -102,4 +99,3 @@
     display: none;
   }
 }
-

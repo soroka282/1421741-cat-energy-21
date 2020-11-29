@@ -1,16 +1,14 @@
 .example {
-background-color: $bg-example;
+  background-color: $bg-example;
 }
 
 .example__wrapper {
   min-width: 200px;
-  outline: 1px solid tomato;
-
 
   @media (min-width: $tablet-width) {
     margin-left: 30px;
     margin-right: 30px;
-    }
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 110px;
@@ -18,7 +16,6 @@ background-color: $bg-example;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-
   }
 }
 
@@ -64,7 +61,6 @@ background-color: $bg-example;
 .example__inner {
   display: flex;
   flex-wrap: wrap;
-  outline: 1px solid red;
   align-items: center;
   justify-content: center;
   padding-bottom: 42px;
@@ -96,7 +92,6 @@ background-color: $bg-example;
   height: 44px;
   border: 1px solid $special_grey;
   border-radius: 3px;
-  outline: 1px solid green;
   margin-right: 30px;
 
   @media (min-width: $tablet-width) {
@@ -134,7 +129,6 @@ background-color: $bg-example;
   height: 44px;
   border: 1px solid $special_grey;
   border-radius: 3px;
-  outline: 1px solid blue;
 
   @media (min-width: $tablet-width) {
     width: 120px;
@@ -162,20 +156,17 @@ background-color: $bg-example;
 
 .example__cost-nutrition {
   @include font-set (normal, normal, 14px, 20px);
-  outline: 1px solid darkcyan;
   width: 188px;
   padding-top: 25px;
   padding-left: 50px;
   padding-right: 50px;
 
-
   @media (min-width: $tablet-width) {
-    padding-right: 0;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
     padding: 0;
-    padding-left: 105px
+    padding-left: 105px;
   }
 }
 
