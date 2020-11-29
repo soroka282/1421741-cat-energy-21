@@ -9,21 +9,6 @@
     font-weight: normal;
     display: flex;
     flex-direction: row;
-
-    &::before {
-      content: "";
-
-      @media (min-width: $desktop-width) {
-        background: linear-gradient(to top, $bg_green 30%, $bg_green 30%),
-          url("../img/indexbgdesktop.jpg") no-repeat 50% 0%;
-        height: 694px;
-        width: 720px;
-        position: absolute;
-        left: -29%;
-        top: -24%;
-        z-index: -1;
-      }
-    }
   }
 }
 
