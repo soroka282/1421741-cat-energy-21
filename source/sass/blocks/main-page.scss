@@ -1,9 +1,18 @@
 .main-page {
   position: relative;
-  text-align: center;
 }
 
 .main-page__title {
   @include font-set (normal, normal, 36px, 36px);
   text-transform: none;
+  margin-top: 27px;
+  margin-bottom: 42px;
+  margin-left: 20px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 30px;
+  }
 }

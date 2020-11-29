@@ -2,6 +2,7 @@
 <html class='page' lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'/>
     <title>HTML Academy: Кэт энерджи</title>
     <link href='css/style.css' rel='stylesheet'>
   </head>
@@ -10,174 +11,207 @@
 
     <header class='page-header'>
       <div class='page-header__wrapper'>
-          <a href='index.html'><img class='page-header__logo' src='https://via.placeholder.com/33x37' alt='logo'></a>
-          <h3 class='page-header__site-name'><b>Cat</b> energy</h3>
-      <nav class='main-nav'>
-        <button class='main-nav__toggle' type='button'><span class='visually-hidden'>Открыть меню</span></button>
-        <ul class='main-nav__list site-list'>
-          <li class='site-list__item'><a href='index.html'>Главная</a></li>
-          <li class='site-list__item site-list__item--active'><a href='catalog.html'>Каталог продукции</a></li>
-          <li class='site-list__item'><a href='form.html'>Подбор программы</a></li>
-        </ul>
-      </nav>
-    </div>
+        <div class='page-header__inner'>
+          <img class='page-header__logo' src='https://via.placeholder.com/33x37' alt='Логотип сайта'>
+          <img class='page-header__site-name' src='https://via.placeholder.com/101x18' alt='Cat energy'>
+          <button class='page-header__toggle' type='button'><span class='visually-hidden'>Открыть меню</span></button>
+        </div>
+        <nav class='main-nav'>
+          <ul class='main-nav__list site-list'>
+            <li class='site-list__item'><a href='index.html'>Главная</a></li>
+            <li class='site-list__item site-list__item--active'><a href='catalog.html'>Каталог продукции</a></li>
+            <li class='site-list__item'><a href='form.html'>Подбор программы</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class='main-page'>
       <h1 class='main-page__title'>Каталог продукции</h1>
+
       <section class='food-cat'>
-        <div class='food-cat__wrapper'>
-          <h2 class='food-cat__title visually-hidden'>Корм</h2>
-          <a class='food-cat__link' href='#'><img src='https://via.placeholder.com/68x86' alt='Корм с курицей 500 грамм'></a>
-          <table classs='food-cat__table'>
-          <caption><a class='food-cat__link' href='#'>Cat energy pro 500 г</a></caption>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Масса</td>
-              <td class='food-cat__cell-quantity'>500 г</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Вкус</td>
-              <td class='food-cat__cell-quantity'>Курица</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Цена</td>
-              <td class='food-cat__cell-quantity'>700 Р.</td>
-            </tr>
-          </table>
-          <button class='food-cat-toggle button' type='button'>Заказать</button>
+        <div class='food-cat__border-box'>
+          <div class='food-cat__wrapper'>
+            <div class='food-cat__inner'>
+              <h2 class='food-cat__title visually-hidden'>Корм</h2>
+              <a class='food-cat__img' href='#'><img src='https://via.placeholder.com/68x86' alt='Корм с курицей 500 грамм'></a>
+              <table class='food-cat__table'>
+                <caption><a class='food-cat__link' href='#'>Cat energy<br> pro 500 г</a></caption>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Масса</td>
+                  <td class='food-cat__cell-quantity'>500 г</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Вкус</td>
+                  <td class='food-cat__cell-quantity'>Курица</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Цена</td>
+                  <td class='food-cat__cell-quantity'>700 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <button class='food-cat__toggle button' type='button'>Заказать</button>
+          </div>
         </div>
 
-        <div class='food-cat__wrapper'>
-          <a class='food-cat__link' href='#'><img src='https://via.placeholder.com/84x100' alt='Корм с курицей 1000 грамм'></a>
-          <table classs='food-cat__table'>
-          <caption><a class='food-cat__link' href='#'>Cat energy pro 1000 г</a></caption>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Масса</td>
-              <td class='food-cat__cell-quantity'>1000 г</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Вкус</td>
-              <td class='food-cat__cell-quantity'>Курица</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Цена</td>
-              <td class='food-cat__cell-quantity'>1000 Р.</td>
-            </tr>
-          </table>
-          <button class='food-cat-toggle button' type='button'>Заказать</button>
+        <div class='food-cat__border-box'>
+          <div class='food-cat__wrapper'>
+            <div class='food-cat__inner'>
+              <a class='food-cat__img' href='#'><img src='https://via.placeholder.com/84x100' alt='Корм с курицей 1000 грамм'></a>
+              <table class='food-cat__table'>
+              <caption><a class='food-cat__link' href='#'>Cat energy<br> pro 1000 г</a></caption>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Масса</td>
+                  <td class='food-cat__cell-quantity'>1000 г</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Вкус</td>
+                  <td class='food-cat__cell-quantity'>Курица</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Цена</td>
+                  <td class='food-cat__cell-quantity'>1000 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <button class='food-cat__toggle button' type='button'>Заказать</button>
+          </div>
         </div>
 
-        <div class='food-cat__wrapper'>
-          <a class='food-cat__link' href='#'><img src='https://via.placeholder.com/68x86' alt='Корм с рыбой 500 грамм'></a>
-          <table classs='food-cat__table'>
-          <caption><a class='food-cat__link' href='#'>Cat energy pro 500 г</a></caption>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Масса</td>
-              <td class='food-cat__cell-quantity'>500 г</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Вкус</td>
-              <td class='food-cat__cell-quantity'>Рыба</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Цена</td>
-              <td class='food-cat__cell-quantity'>700 Р.</td>
-            </tr>
-          </table>
-          <button class='food-cat-toggle button' type='button'>Заказать</button>
+        <div class='food-cat__border-box'>
+          <div class='food-cat__wrapper'>
+            <div class='food-cat__inner'>
+              <a class='food-cat__img' href='#'><img src='https://via.placeholder.com/68x86' alt='Корм с рыбой 500 грамм'></a>
+              <table class='food-cat__table'>
+              <caption><a class='food-cat__link' href='#'>Cat energy<br> pro 500 г</a></caption>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Масса</td>
+                  <td class='food-cat__cell-quantity'>500 г</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Вкус</td>
+                  <td class='food-cat__cell-quantity'>Рыба</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Цена</td>
+                  <td class='food-cat__cell-quantity'>700 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <button class='food-cat__toggle button' type='button'>Заказать</button>
+          </div>
         </div>
 
-        <div class='food-cat__wrapper'>
-          <a class='food-cat__link' href='#'><img src='https://via.placeholder.com/84x100' alt='Корм с рыбой 1000 грамм'></a>
-          <table classs='food-cat__table'>
-          <caption><a class='food-cat__link' href='#'>Cat energy pro 1000 г</a></caption>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Масса</td>
-              <td class='food-cat__cell-quantity'>1000 г</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Вкус</td>
-              <td class='food-cat__cell-quantity'>Рыба</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Цена</td>
-              <td class='food-cat__cell-quantity'>1000 Р.</td>
-            </tr>
-          </table>
-          <button class='food-cat-toggle button' type='button'>Заказать</button>
+        <div class='food-cat__border-box'>
+          <div class='food-cat__wrapper'>
+            <div class='food-cat__inner'>
+              <a class='food-cat__img' href='#'><img src='https://via.placeholder.com/84x100' alt='Корм с рыбой 1000 грамм'></a>
+              <table class='food-cat__table'>
+                <caption class='food-cat__link'><a href='#'>Cat energy<br> pro 1000 г</a></caption>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Масса</td>
+                  <td class='food-cat__cell-quantity'>1000 г</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Вкус</td>
+                  <td class='food-cat__cell-quantity'>Рыба</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Цена</td>
+                  <td class='food-cat__cell-quantity'>1000 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <button class='food-cat__toggle button' type='button'>Заказать</button>
+          </div>
         </div>
 
-        <div class='food-cat__wrapper'>
-          <a class='food-cat__link' href='#'><img src='https://via.placeholder.com/68x86' alt='Корм с гречкой 500 грамм'></a>
-          <table classs='food-cat__table'>
-          <caption><a class='food-cat__link' href='#'>Cat energy slim 500 г</a></caption>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Масса</td>
-              <td class='food-cat__cell-quantity'>500 г</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Вкус</td>
-              <td class='food-cat__cell-quantity'>Гречка</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Цена</td>
-              <td class='food-cat__cell-quantity'>400 Р.</td>
-            </tr>
-          </table>
-          <button class='food-cat-toggle button' type='button'>Заказать</button>
+        <div class='food-cat__border-box'>
+          <div class='food-cat__wrapper'>
+            <div class='food-cat__inner'>
+              <a class='food-cat__img' href='#'><img src='https://via.placeholder.com/68x86' alt='Корм с гречкой 500 грамм'></a>
+              <table class='food-cat__table'>
+              <caption><a class='food-cat__link' href='#'>Cat energy<br> slim 500 г</a></caption>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Масса</td>
+                  <td class='food-cat__cell-quantity'>500 г</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Вкус</td>
+                  <td class='food-cat__cell-quantity'>Гречка</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Цена</td>
+                  <td class='food-cat__cell-quantity'>400 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <button class='food-cat__toggle button' type='button'>Заказать</button>
+          </div>
         </div>
 
-        <div class='food-cat__wrapper'>
-          <a class='food-cat__link' href='#'><img src='https://via.placeholder.com/84x100' alt='Корм с курицей 1000 грамм'></a>
-          <table classs='food-cat__table'>
-          <caption><a class='food-cat__link' href='#'>Cat energy slim 1000 г</a></caption>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Масса</td>
-              <td class='food-cat__cell-quantity'>1000 г</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Вкус</td>
-              <td class='food-cat__cell-quantity'>Гречка</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Цена</td>
-              <td class='food-cat__cell-quantity'>700 Р.</td>
-            </tr>
-          </table>
-          <button class='food-cat-toggle button' type='button'>Заказать</button>
+        <div class='food-cat__border-box'>
+          <div class='food-cat__wrapper'>
+            <div class='food-cat__inner'>
+              <a class='food-cat__img' href='#'><img src='https://via.placeholder.com/84x100' alt='Корм с курицей 1000 грамм'></a>
+              <table class='food-cat__table'>
+              <caption><a class='food-cat__link' href='#'>Cat energy<br> slim 1000 г</a></caption>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Масса</td>
+                  <td class='food-cat__cell-quantity'>1000 г</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Вкус</td>
+                  <td class='food-cat__cell-quantity'>Гречка</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Цена</td>
+                  <td class='food-cat__cell-quantity'>700 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <button class='food-cat__toggle button' type='button'>Заказать</button>
+          </div>
         </div>
 
-        <div class='food-cat__wrapper'>
-          <a class='food-cat__link' href='#'><img src='https://via.placeholder.com/68x86' alt='Корм с рисом 500 грамм'></a>
-          <table classs='food-cat__table'>
-          <caption><a class='food-cat__link' href='#'>Cat energy slim 500 г</a></caption>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Масса</td>
-              <td class='food-cat__cell-quantity'>500 г</td></tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Вкус</td>
-              <td class='food-cat__cell-quantity'>Рис</td>
-            </tr>
-            <tr class='food-cat__string'>
-              <td class='food-cat__cell-name'>Цена</td>
-              <td class='food-cat__cell-quantity'>500 Р.</td>
-            </tr>
-          </table>
-          <button class='food-cat-toggle button' type='button'>Заказать</button>
+        <div class='food-cat__border-box'>
+          <div class='food-cat__wrapper'>
+            <div class='food-cat__inner'>
+              <a class='food-cat__img' href='#'><img src='https://via.placeholder.com/68x86' alt='Корм с рисом 500 грамм'></a>
+              <table class='food-cat__table'>
+              <caption><a class='food-cat__link' href='#'>Cat energy<br> slim 500 г</a></caption>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Масса</td>
+                  <td class='food-cat__cell-quantity'>500 г</td></tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Вкус</td>
+                  <td class='food-cat__cell-quantity'>Рис</td>
+                </tr>
+                <tr class='food-cat__string'>
+                  <td class='food-cat__cell-name'>Цена</td>
+                  <td class='food-cat__cell-quantity'>500 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <button class='food-cat__toggle button' type='button'>Заказать</button>
+          </div>
         </div>
-
         <div class='food-cat__wrapper'>
-          <p class='food-cat__more'>Показать еще 100500 товаров</p>
-          <p class='food-cat__more-caption'>На самом деле вкусов гораздо больше!</p>
-          <a class='food-cat__more-link' href='#'>Показать все</a>
+          <div class='food-cat__box'>
+            <p class='food-cat__more'>Показать еще 100500 товаров</p>
+            <p class='food-cat__more-caption'>На самом деле вкусов гораздо больше!</p>
+            <a class='food-cat__more-link' href='#'>Показать все</a>
+          </div>
         </div>
       </section>
 
       <section class='add-product'>
-
-        <h1 class='add-product__title'>Дополнительные товары</h1>
+        <div class='add-product__inner'>
+          <h1 class='add-product__title'>Дополнительные товары</h1>
+        </div>
         <div class='add-product__wrapper'>
-            <table class='product-table'>
+          <table class='product-table'>
             <caption class='product-table__name'>Сахарозаменитель</caption>
             <tr class='product-table__string'>
               <td class='product-table__quantity'>1 упаковка (100г)</td>
@@ -232,11 +266,13 @@
 
       <section class='about-company'>
         <div class='about-company__wrapper'>
-          <h2 class='visually-hidden'>О компании</h2>
-          <p class='about-company__invitation'>приглашаем к сотрудничеству дилеров!<p>
-          <p class='about-company__adress'>ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+          <div class='about-company__inner'>
+            <h2 class='visually-hidden'>О компании</h2>
+            <p class='about-company__invitation'>приглашаем к сотрудничеству дилеров!<p>
+            <p class='about-company__adress'>ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург</p>
+          </div>
           <img class='about-company__map' src='https://via.placeholder.com/320x362' alt='Карта офиса Cat Energy'>
         </div>
       </section>
