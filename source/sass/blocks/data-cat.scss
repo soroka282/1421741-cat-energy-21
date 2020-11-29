@@ -34,15 +34,9 @@
   border: none;
 }
 
-.data-cat__name {
-  outline: 1px solid red;
-
-}
-
 .data-cat__input {
   border: 1px solid $input-border;
   box-sizing: border-box;
   height: 45px;
   margin-bottom: 12px;
-  outline: 1px solid green;
 }

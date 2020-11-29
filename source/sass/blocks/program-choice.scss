@@ -14,8 +14,6 @@
   }
 }
 
-
-
 .program-choice__title {
   @include font-set (normal, normal, 36px, 36px);
   text-transform: none;
@@ -29,6 +27,7 @@
 
 .program-choice__description {
   min-width: 226px;
+
   @include font-set (normal, normal, 14px, 18px);
 
   @media (min-width: $tablet-width) {
