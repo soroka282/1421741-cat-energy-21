@@ -31,7 +31,7 @@
   padding-left: 20px;
   background: linear-gradient(to top, $basic_white 30%, $bg_green 30%),
     url("../img/indexbackgrounddesktop.jpg") no-repeat 50% 0%,
-    linear-gradient(90deg, $bg-caption 0%, $bg-caption-2 5%,$bg-caption-2 95%, $bg-caption 100%);
+    linear-gradient(90deg, $bg-caption 0%, $bg-caption-2 5%, $bg-caption-2 95%, $bg-caption 100%);
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -95,7 +95,7 @@
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    @include font-set(normal, normal, 20px, 0px);
+    @include font-set(normal, normal, 20px, 0);
     bottom: 150px;
     left: 31%;
     transform: translateX(-50%);

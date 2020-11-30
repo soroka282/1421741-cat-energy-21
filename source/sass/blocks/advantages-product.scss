@@ -203,8 +203,8 @@
   }
 
   &:nth-child(1)::after {
-    content: "1";
     @include font-set (normal, normal, 280px, 280px);
+    content: "1";
     font-family: "Oswald", sans-serif;
     color: $gray-basic;
     z-index: -1;
@@ -219,8 +219,8 @@
   }
 
   &:nth-child(2)::after {
-    content: "2";
     @include font-set (normal, normal, 280px, 280px);
+    content: "2";
     font-family: "Oswald", sans-serif;
     color: $gray-basic;
     z-index: -1;
@@ -235,8 +235,8 @@
   }
 
   &:nth-child(3)::after {
-    content: "3";
     @include font-set (normal, normal, 280px, 280px);
+    content: "3";
     font-family: "Oswald", sans-serif;
     color: $gray-basic;
     z-index: -1;
@@ -251,8 +251,8 @@
   }
 
   &:nth-child(4)::after {
-    content: "4";
     @include font-set (normal, normal, 280px, 280px);
+    content: "4";
     font-family: "Oswald", sans-serif;
     color: $gray-basic;
     z-index: -1;
