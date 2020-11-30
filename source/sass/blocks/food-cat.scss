@@ -78,8 +78,7 @@
   padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 24px;
+    @include font-set (normal, normal, 20px, 24px);
   }
 }
 
@@ -90,8 +89,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 24px;
+    @include font-set (normal, normal, 20px, 24px);
     border-bottom: 10px solid $special_grey-2;
   }
 }
@@ -120,8 +118,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 22px;
+    @include font-set (normal, normal, 20px, 22px);
   }
 }
 
