@@ -8,6 +8,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -15,6 +16,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 110px;
     margin-right: 110px;
   }
@@ -22,7 +24,6 @@
 
 .page-header__inner {
   height: 66px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
