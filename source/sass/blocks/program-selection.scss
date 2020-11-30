@@ -3,7 +3,16 @@
 }
 
 .program-selection__group {
+  @include font-set (normal, normal, 36x, 36px);
   border: none;
   border-top: 1px solid $border-bottom-program;
   border-bottom: 1px solid $border-bottom-program;
+}
+
+.program-selection__title {
+  text-transform: none;
+}
+
+.program-selection__description {
+  @include font-set (normal, normal, 14px, 18px);
 }
