@@ -2,12 +2,12 @@
   @include font-set (normal, normal, 16px, 18px);
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+    @include font-set (normal, normal, 20px, 30px);
   }
 }
 
 .program-selection__wrapper {
+  position: relative;
   text-align: left;
   margin-left: 20px;
   margin-right: 20px;
@@ -35,6 +35,13 @@
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
+    border: 1px solid $border-bottom-program;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -150px;
+    left: 60%;
     border: 1px solid $border-bottom-program;
   }
 }

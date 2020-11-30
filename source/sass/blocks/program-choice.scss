@@ -20,8 +20,7 @@
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
+    @include font-set (normal, normal, 60px, 60px);
   }
 }
 
@@ -31,7 +30,6 @@
   @include font-set (normal, normal, 14px, 18px);
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+    @include font-set (normal, normal, 20px, 30px);
   }
 }
