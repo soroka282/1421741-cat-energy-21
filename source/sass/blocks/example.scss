@@ -26,8 +26,7 @@
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
+    @include font-set (normal, normal, 60px, 60px);
     padding-bottom: 30px;
   }
 }
@@ -45,14 +44,12 @@
   grid-row: 2/3;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
+    @include font-set (normal, normal, 16px, 24px);
     padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 16px;
-    line-height: 24px;
+    @include font-set (normal, normal, 16px, 24px);
     padding-bottom: 54px;
     width: 436px;
   }
@@ -76,8 +73,9 @@
   @media (min-width: $desktop-width) {
     justify-content: center;
     flex-wrap: wrap;
-    width: 436px;
-    padding-bottom: 59px;
+    width: 380px;
+    padding-bottom: 0px;
+    margin: 0;
   }
 }
 
@@ -95,10 +93,9 @@
   margin-right: 30px;
 
   @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 30px, 37px);
     width: 120px;
     height: 50px;
-    font-size: 30px;
-    line-height: 37px;
   }
 
   & legend {
@@ -131,10 +128,9 @@
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 30px, 37px);
     width: 120px;
     height: 50px;
-    font-size: 30px;
-    line-height: 37px;
   }
 
   & legend {
@@ -156,17 +152,27 @@
 
 .example__cost-nutrition {
   @include font-set (normal, normal, 14px, 20px);
-  width: 188px;
+  min-width: 188px;
   padding-top: 25px;
   padding-left: 50px;
   padding-right: 50px;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
+    @include font-set (normal, normal, 20px, 20px);
     text-align: right;
     padding: 0;
     padding-left: 105px;
+    width: 188px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding: 0;
+    min-width: 370px;
+
+    & span {
+      padding-left: 70px;
+    }
   }
 }
 

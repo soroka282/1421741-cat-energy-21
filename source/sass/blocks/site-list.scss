@@ -24,7 +24,6 @@
     padding: 0;
     padding-top: 42px;
     margin-left: 35px;
-    outline: 1px solid black;
     top: 10px;
   }
 
@@ -38,7 +37,7 @@
   color: $basic-black;
 
   @media (min-width: $desktop-width) {
-    color: $basic_white;
+    color: $basic-black;
   }
 
   &:hover {

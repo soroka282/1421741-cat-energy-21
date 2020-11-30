@@ -31,7 +31,7 @@
   padding-left: 20px;
   background: linear-gradient(to top, $basic_white 30%, $bg_green 30%),
     url("../img/indexbackgrounddesktop.jpg") no-repeat 50% 0%,
-    linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(39, 68, 21, 1) 5%, rgba(39, 68, 21, 1) 95%, rgba(255, 255, 255, 1) 100%);
+    linear-gradient(90deg, $bg-caption 0%, $bg-caption-2 5%,$bg-caption-2 95%, $bg-caption 100%);
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -45,41 +45,25 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
-
-    &::before {
-      content: "";
-      background: linear-gradient(to top, $bg_green 30%, $bg_green 30%),
-        url("../img/indexbgdesktop.jpg") no-repeat 50% 0%;
-      height: 694px;
-      width: 720px;
-      position: absolute;
-      right: -9%;
-      transform: translate(50%, -53%);
-      top: 53%;
-      z-index: -1;
-    }
   }
 }
 
 .caption__text {
   @include font-set(normal, normal, 36px, 36px);
   text-transform: none;
-  font-weight: normal;
   margin-bottom: 11px;
   margin-right: 10px;
   width: 249px;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
+    @include font-set(normal, normal, 60px, 60px);
     min-width: 500px;
   }
 }
 
 .caption__slogan {
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
+    @include font-set(normal, normal, 20px, 20px);
     min-width: 500px;
     margin-top: 41px;
   }
@@ -111,13 +95,12 @@
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
+    @include font-set(normal, normal, 20px, 0px);
     bottom: 150px;
     left: 31%;
     transform: translateX(-50%);
     width: 244px;
     min-height: 54px;
-    font-size: 20px;
-    line-height: 0px;
   }
 
   @media (min-width: $desktop-width) {
