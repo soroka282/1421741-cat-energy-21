@@ -1,0 +1,12 @@
+.additionally {
+  @include font-set (normal, normal, 16px, 18px);
+}
+
+.additionally__title {
+  @include font-set (normal, normal, 24px, 26px);
+  text-transform: none;
+}
+
+.additionally__group {
+  border: none;
+}
