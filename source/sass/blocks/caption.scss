@@ -1,26 +1,111 @@
 .caption {
   @include font-set (normal, normal, 14px, 14px);
-  text-align: center;
-  background: linear-gradient(to top, $basic_white 30%, $bg_green 30%),
-    url("../img/indexbackgrounddesktop.jpg") no-repeat;
   color: $basic_white;
+}
+
+.caption__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}
+
+.caption__inner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 430px;
+  min-width: 93%;
+  padding-left: 20px;
+  background: linear-gradient(to top, $basic_white 30%, $bg_green 30%),
+    url("../img/indexbackgrounddesktop.jpg") no-repeat 50% 0%,
+    linear-gradient(90deg, $bg-caption 0%, $bg-caption-2 5%, $bg-caption-2 95%, $bg-caption 100%);
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    color: $basic-black;
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 0;
+    min-width: 70%;
+    margin-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .caption__text {
   @include font-set(normal, normal, 36px, 36px);
   text-transform: none;
-  font-weight: normal;
+  margin-bottom: 11px;
+  margin-right: 10px;
+  width: 249px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(normal, normal, 60px, 60px);
+    min-width: 500px;
+  }
+}
+
+.caption__slogan {
+  @media (min-width: $tablet-width) {
+    @include font-set(normal, normal, 20px, 20px);
+    min-width: 500px;
+    margin-top: 41px;
+  }
+}
+
+.caption__image {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 260px;
+  }
 }
 
 .caption__toggle-choice {
+  font-family: "Oswald", sans-serif;
   color: $basic_white;
   background-color: $basic_green;
   border: 1px 1px var(--basic-white);
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    @include font-set(normal, normal, 20px, 0);
+    bottom: 150px;
+    left: 31%;
+    transform: translateX(-50%);
+    width: 244px;
+    min-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 18%;
+  }
 
   &:hover {
     background-color: $basic_green-2;
