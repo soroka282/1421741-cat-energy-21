@@ -8,6 +8,15 @@
   list-style: none;
   border-top: 1px solid $border-bottom-program;
   border-bottom: 1px solid $border-bottom-program;
+  width: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 .social__item {

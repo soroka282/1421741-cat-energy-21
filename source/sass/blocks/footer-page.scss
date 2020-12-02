@@ -1,3 +1,21 @@
-.page-footer {
+.footer-page {
   text-align: center;
+}
+
+.footer-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.footer-page__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
 }
