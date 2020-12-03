@@ -3,16 +3,37 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+    @include font-set (normal, normal, 20px, 30px);
   }
 }
 
 .data-cat__wrapper {
-  width: 280px;
+  border-bottom: 1px solid $border-bottom-program;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
+.data-cat__group {
+  margin: 0;
+  padding: 0;
+  display: grid;
   text-align: left;
+  align-items: center;
+  grid-template-columns: min-content 1fr;
+  border: none;
   margin-left: 20px;
   margin-right: 20px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin-left: 71px;
@@ -21,22 +42,31 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 110px;
-    margin-right: 110px;
+    margin-right: 80px;
   }
 }
 
-.data-cat__group {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  border: none;
-}
-
 .data-cat__input {
+  @include font-set (normal, normal, 16px, 18px);
   border: 1px solid $input-border;
   box-sizing: border-box;
-  height: 45px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
   margin-bottom: 12px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    width: 450px;
+  }
+}
+
+.data-cat__name {
+  min-width: 94px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 120px;
+  }
 }

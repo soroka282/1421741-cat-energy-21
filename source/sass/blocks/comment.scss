@@ -7,8 +7,19 @@
   margin: 0;
   min-width: 280px;
   padding-top: 50px;
-  margin-top: 50px;
+  margin-top: 39px;
   border-top: 2px solid $basic_green;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+    padding-top: 0;
+  }
 }
 
 .comment__title {
@@ -17,8 +28,9 @@
   position: absolute;
   background-color: $basic_white;
   top: -38px;
-  width: 16vh;
+  width: 18vh;
   padding-right: 5px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 36px, 36px);
@@ -45,6 +57,7 @@
 }
 
 .comment__input {
+  @include font-set (normal, normal, 16px, 18px);
   color: $special_dark-grey;
   border: 1px solid $input-border;
   font-family: "Oswald", sans-serif;
@@ -53,8 +66,16 @@
   min-height: 150px;
   text-transform: uppercase;
   resize: none;
+  padding-top: 5px;
+  padding-left: 15px;
+
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    min-height: 174px;
   }
 }

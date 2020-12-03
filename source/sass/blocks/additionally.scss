@@ -10,9 +10,14 @@
   position: relative;
   margin: 0;
   min-width: 280px;
-  padding-top: 50px;
-  margin-top: 50px;
+  padding-top: 24px;
+  margin-top: 32px;
+  padding-bottom: 14px;
   border-top: 2px solid $basic_green;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+  }
 }
 
 .additionally__title {
@@ -20,10 +25,10 @@
   text-transform: none;
   position: absolute;
   background-color: $basic_white;
-  top: -38px;
+  top: -36px;
   width: 19vh;
   padding-right: 5px;
-  margin-left: 20px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 36px, 36px);
@@ -36,13 +41,14 @@
 
 .additionally__group {
   margin-right: 20px;
+  margin-bottom: 18px;
   border: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 40px;
-  margin-bottom: 30px;
+  margin-left: 42px;
+
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -51,6 +57,7 @@
     text-align: left;
     min-width: 600px;
     margin-left: 71px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,9 +76,9 @@
   &:checked + .additionally__name::after {
     content: "";
     position: absolute;
-    width: 13px;
-    height: 13px;
-    left: -28px;
+    width: 18px;
+    height: 18px;
+    left: -36px;
     top: 0;
     background-image: url("../img/vector.svg");
     background-repeat: no-repeat;
@@ -87,7 +94,7 @@
 }
 
 .additionally__name {
-  margin-top: 20px;
+  margin-top: 23px;
   position: relative;
   margin-left: 10px;
   cursor: pointer;
@@ -104,9 +111,9 @@
   &::before {
     content: "";
     position: absolute;
-    width: 26px;
-    height: 26px;
-    left: -35px;
+    width: 29px;
+    height: 29px;
+    left: -45px;
     top: -5px;
     border: 1px solid $special_grey;
     box-sizing: border-box;

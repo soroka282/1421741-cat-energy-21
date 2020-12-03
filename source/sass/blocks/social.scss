@@ -8,18 +8,31 @@
   list-style: none;
   border-top: 1px solid $border-bottom-program;
   border-bottom: 1px solid $border-bottom-program;
-  width: 92px;
+  min-width: 280px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     border-top: none;
     border-bottom: none;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding-top: 0;
+    margin-top: 50px;
   }
 }
 
 .social__item {
+  margin-right: 30px;
+
   & svg {
     fill: $special_grey-3;
   }

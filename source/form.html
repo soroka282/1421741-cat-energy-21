@@ -30,39 +30,40 @@
     <main class='main-page'>
       <section class='program-choice'>
         <h1 class='program-choice__title'>Подбор программы</h1>
-        <p class='program-choice__description'>Заполните анкету, и мы подберем
+        <p class='program-choice__description'>Заполните анкету, и мы подберем <br>
           программу питания для вашего кота</p>
       </section>
       <form class='form' action='https://echo.htmlacademy.ru' method='get'>
 
-        <section class='data-cat'>
-          <div class='data-cat__wrapper'>
-            <h2 class='data-cat__title visually-hidden'>Данные кота</h2>
-            <fieldset class='data-cat__group'>
-              <label class='data-cat__name' for='name-cat'>Имя:*</label>
-              <input class='data-cat__input' type='text' id='name-cat' name='name-cat' placeholder='Барсик' required>
-              <label class='data-cat__name' for='weight-cat'>Вес(кг):*</label>
-              <input class='data-cat__input' type='number' id='weight-cat' name='weight-cat' placeholder='7' required>
-              <label class='data-cat__name' for='age-cat'>Возраст (лет):</label>
-              <input class='data-cat__input' type='number' id='age-cat' name='age-cat' placeholder='7'>
-            </fieldset>
-          </div>
-        </section>
+        <div class='form__wrapper'>
+          <section class='data-cat'>
+            <div class='data-cat__wrapper'>
+              <h2 class='data-cat__title visually-hidden'>Данные кота</h2>
+              <fieldset class='data-cat__group'>
+                <label class='data-cat__name' for='name-cat'>Имя:*</label>
+                <input class='data-cat__input' type='text' id='name-cat' name='name-cat' placeholder='Барсик' required>
+                <label class='data-cat__name' for='weight-cat'>Вес(кг):*</label>
+                <input class='data-cat__input' type='number' id='weight-cat' name='weight-cat' placeholder='7' required>
+                <label class='data-cat__name' for='age-cat'>Возраст (лет):</label>
+                <input class='data-cat__input' type='number' id='age-cat' name='age-cat' placeholder='7'>
+              </fieldset>
+            </div>
+          </section>
 
-        <section class='program-selection'>
-          <div class='program-selection__wrapper'>
-            <h2 class='program-selection__title visually-hidden'>Выбор программы</h2>
-            <fieldset class='program-selection__group'>
-              <input class='program-selection__toggle' value='Похудение' type='radio' name='programm' id='losing'>
-              <label class='program-selection__name' for='losing'>Похудение</label>
-              <input class='program-selection__toggle' value='Набор массы' type='radio' name='programm' id='weight'>
-              <label class='program-selection__name' for='weight'>Набор массы</label>
-              <input class='program-selection__toggle' value='Не знаю (Нужен ваш совет)' type='radio' name='programm' id='help'>
-              <label class='program-selection__name' for='help'>Не знаю (Нужен ваш совет)</label>
-            </fieldset>
-          </div>
-        </section>
-
+          <section class='program-selection'>
+            <div class='program-selection__wrapper'>
+              <h2 class='program-selection__title visually-hidden'>Выбор программы</h2>
+              <fieldset class='program-selection__group'>
+                <input class='program-selection__toggle' value='Похудение' type='radio' name='programm' id='losing'>
+                <label class='program-selection__name' for='losing'>Похудение</label>
+                <input class='program-selection__toggle' value='Набор массы' type='radio' name='programm' id='weight'>
+                <label class='program-selection__name' for='weight'>Набор массы</label>
+                <input class='program-selection__toggle' value='Не знаю (Нужен ваш совет)' type='radio' name='programm' id='help'>
+                <label class='program-selection__name' for='help'>Не знаю (Нужен ваш совет)</label>
+              </fieldset>
+            </div>
+          </section>
+        </div>
         <section class='data-owner'>
           <div class='data-owner__wrapper'>
             <div class='data-owner__inner'>
@@ -71,11 +72,12 @@
             <fieldset class='data-owner__group'>
               <label class='data-owner__name' for='email'>E-mail:*</label>
               <input class='data-owner__input' type='email' id='email' name='email-owner' placeholder='kuklachev@gmail.com' required>
-              <label class='data-owner__name' for='tel'>Вес(кг):*</label>
+              <label class='data-owner__name' for='tel'>Телефон:* </label>
               <input class='data-owner__input' type='tel' id='tel' name='tel-owner' placeholder='8 (960) 900-60-90' required>
             </fieldset>
           </div>
         </section>
+
 
         <section class='comment'>
           <div class='comment__inner'>
@@ -104,26 +106,24 @@
             </fieldset>
           </div>
         </section>
-
-        <button class='form-toggle button' type='submit'>Найти</button>
-        <p class='required-text'>
-          <small>
-          * — Обязательные поля
-          </small>
-        </p>
-
+        <div class='form__inner'>
+          <button class='form__toggle button' type='submit'>Отправить заявку</button>
+          <p class='form__required-text'>
+            * — Обязательные поля
+          </p>
+        </div>
       </form>
 
       <section class='about-company'>
         <div class='about-company__wrapper'>
           <div class='about-company__inner'>
             <h2 class='visually-hidden'>О компании</h2>
-            <p class='about-company__invitation'>приглашаем к сотрудничеству дилеров!</p>
+            <p class='about-company__invitation'>приглашаем<br> к сотрудничеству дилеров!</p>
             <p class='about-company__adress'>ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург</p>
           </div>
-          <img class='about-company__map' src='https://via.placeholder.com/320x362' alt='Карта офиса Cat Energy'>
+          <img class='about-company__map' src='https://via.placeholder.com/320x400' alt='Карта офиса Cat Energy'>
         </div>
       </section>
 
