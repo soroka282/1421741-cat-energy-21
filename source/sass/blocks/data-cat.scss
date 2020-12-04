@@ -8,15 +8,18 @@
 }
 
 .data-cat__wrapper {
-  border-bottom: 1px solid $border-bottom-program;
+  margin: 0 auto;
+  max-width: 500px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
+    max-width: 899px;
+    padding-top: 25px;
     padding-bottom: 70px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1800px;
     padding-top: 30px;
     padding-bottom: 0;
     border: none;
@@ -33,7 +36,7 @@
   border: none;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-left: 71px;

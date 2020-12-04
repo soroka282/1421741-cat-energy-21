@@ -1,5 +1,22 @@
 .program-choice {
   text-align: left;
+}
+
+.program-choice__wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+
+
+  @media (min-width: $tablet-width) {
+    max-width: 899px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1800px;
+  }
+}
+
+.program-choice__inner {
   margin-left: 20px;
   margin-right: 20px;
 
@@ -25,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 25px;
+    padding-top: 26px;
   }
 }
 
@@ -38,12 +55,12 @@
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 30px);
     margin-left: 40px;
-    margin-top: 60px;
+    margin-top: 58px;
   }
 
   @media (min-width: $desktop-width) {
     @include font-set (normal, normal, 20px, 30px);
     margin-left: 0;
-    margin-top: 60px;
+    margin-top: 56px;
   }
 }

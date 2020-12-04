@@ -1,11 +1,9 @@
 .copyright {
   text-decoration: none;
   color: $special_dark-grey;
-  outline: 1px solid red;
 
   @media (min-width: $tablet-width) {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,6 +13,7 @@
 
   & svg {
     fill: $special_dark-grey;
+    transform: translateY(-7px);
   }
 
   &:hover svg {
@@ -30,10 +29,7 @@
 .copyright__name {
   @include font-set (normal, normal, 16px, 18px);
   font-family: "Arial", sans-serif;
-
-  & div {
-    text-transform: none;
-  }
+  margin-top: 0;
 
   &:hover {
     color: $basic_green;
@@ -42,4 +38,8 @@
   &:focus {
     color: $special_dark-grey-opacity;
   }
+}
+
+.copyright__name--big-text {
+  text-transform: none;
 }

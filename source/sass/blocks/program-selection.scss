@@ -1,19 +1,29 @@
 .program-selection {
   @include font-set (normal, normal, 16px, 18px);
+  border-top: 1px solid $border-bottom-program;
+  border-bottom: 1px solid $border-bottom-program;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 30px);
+    border: none;
   }
 }
 
 .program-selection__wrapper {
-  border-bottom: 1px solid $border-bottom-program;
+  margin: 0 auto;
   position: relative;
   text-align: left;
+  max-width: 500px;
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding-bottom: 45px;
+    margin-top: -28px;
+    padding-bottom: 10px;
+    max-width: 899px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1800px;
   }
 }
 
@@ -32,6 +42,7 @@
     margin-left: 71px;
     margin-right: 30px;
     border: 1px solid $border-bottom-program;
+    width: 628px;
   }
 
   @media (min-width: $desktop-width) {
