@@ -2,75 +2,39 @@
   text-align: left;
 }
 
-.comment__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &::after {
-    content: "";
-    display: inline-block;
-    border-top: 2px solid $basic_green;
-    width: 100%;
-    transform: translateY(5px);
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: -42px;
-    margin-left: 5px;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      border-top: 2px solid $basic_green;
-      width: 5%;
-      transform: translateY(5px);
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -30px;
-    margin-left: 15px;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      border-top: 2px solid $basic_green;
-      width: 7%;
-      transform: translateY(5px);
-    }
-
-    &::after {
-      content: "";
-      display: inline-block;
-      border-top: 2px solid $basic_green;
-      width: 100%;
-      transform: translateY(5px);
-    }
-  }
-}
-
 .comment__title {
   @include font-set (normal, normal, 24px, 26px);
   text-transform: none;
-  min-width: 121px;
-  margin-left: 20px;
+  width: 121px;
+  padding-left: 20px;
   padding-right: 21px;
-  padding-top: 5px;
-  display: flex;
+  position: relative;
+  background-color: $basic_white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    top: 62%;
+    width: 5000px;
+    border-top: 2px solid $basic_green;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 36px, 36px);
-    margin-left: 38px;
-    min-width: 182px;
+    margin-left: 31px;
+    padding-left: 38px;
+    width: 182px;
     padding-top: 0;
     padding-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
     @include font-set (normal, normal, 36px, 36px);
-    margin-left: 16px;
-    min-width: 182px;
+    margin-left: 70px;
+    padding-left: 40px;
+    width: 182px;
     padding-top: 0;
     padding-right: 38px;
   }
@@ -79,15 +43,16 @@
 .comment__wrapper {
   margin: 0 auto;
   max-width: 500px;
-  padding-top: 18px;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     max-width: 899px;
-    padding-top: 46px;
+    padding-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1800px;
+    margin-top: -60px;
   }
 }
 
@@ -102,15 +67,17 @@
   text-transform: uppercase;
   resize: none;
   padding-top: 10px;
-  padding-left: 15px;
+  padding-left: 16px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 18px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 30px);
     min-height: 174px;
     margin-left: 70px;
     margin-right: 0;
+    margin-top: 50px;
     min-width: 82%;
   }
 

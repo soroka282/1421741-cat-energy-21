@@ -1,35 +1,11 @@
 .copyright {
   text-decoration: none;
   color: $special_dark-grey;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 15px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  & svg {
-    fill: $special_dark-grey;
-    transform: translateY(-7px);
-  }
-
-  &:hover svg {
-    fill: $basic_green;
-  }
-
-  &:focus svg {
-    fill: $bg-green;
-    opacity: 0.3;
-  }
 }
 
 .copyright__name {
   @include font-set (normal, normal, 16px, 18px);
   font-family: "Arial", sans-serif;
-  margin-top: 0;
 
   &:hover {
     color: $basic_green;

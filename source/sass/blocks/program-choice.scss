@@ -38,11 +38,11 @@
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 60px, 60px);
-    padding-top: 5px;
+    padding-top: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 26px;
+    padding-top: 29px;
   }
 }
 

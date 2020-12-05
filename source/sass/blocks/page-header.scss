@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     max-width: 1800px;
+    padding-right: 48px;
   }
 }
 
@@ -65,7 +66,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 20px;
-    margin-right: 540px;
+    margin-right: 0;
   }
 }
 

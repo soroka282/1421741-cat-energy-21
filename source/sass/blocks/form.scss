@@ -22,12 +22,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 23px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
     padding-bottom: 55px;
   }
 }
 
 .form__toggle {
   @include font-set (normal, normal, 16px, 20px);
+  margin-top: 1px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 0);
@@ -40,7 +47,7 @@
     min-width: 568px;
     min-height: 52px;
     margin-top: 0;
-    margin-left: -285px;
+    margin-left: -333px;
   }
 }
 
