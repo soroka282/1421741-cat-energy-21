@@ -1,12 +1,156 @@
 .additionally {
   @include font-set (normal, normal, 16px, 18px);
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 20px, 30px);
+  }
 }
 
 .additionally__title {
   @include font-set (normal, normal, 24px, 26px);
   text-transform: none;
+  text-align: left;
+  position: relative;
+  background-color: $basic_white;
+  width: 141px;
+  padding-left: 20px;
+  padding-right: 23px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    top: 65%;
+    width: 5000px;
+    border-top: 2px solid $basic_green;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 36px, 36px);
+    margin-left: 30px;
+    padding-left: 40px;
+    margin-top: 11px;
+    padding-right: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set (normal, normal, 36px, 36px);
+    margin-left: 70px;
+    padding-left: 40px;
+    padding-right: 111px;
+  }
+}
+
+.additionally__wrapper {
+  margin: 0 auto;
+  padding-bottom: 32px;
+  max-width: 500px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 899px;
+    padding-top: 49px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1800px;
+    margin-top: 2px;
+  }
 }
 
 .additionally__group {
+  margin-right: 20px;
+  margin-left: 42px;
+  padding-top: 0;
   border: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 33px;
+    grid-row-gap: 20px;
+    text-align: left;
+    min-width: 600px;
+    margin-left: 64px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 65px;
+  }
+}
+
+.additionally__toggle {
+  display: none;
+  position: relative;
+
+  &:checked + .additionally__name::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: -37px;
+    top: 0;
+    background-image: url("../img/vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      left: -45px;
+      top: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 18px;
+      height: 18px;
+      left: -50px;
+      top: 5px;
+    }
+  }
+}
+
+.additionally__name {
+  margin-top: 23px;
+  position: relative;
+  margin-left: 10px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 45px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    left: -45px;
+    top: -5px;
+    border: 1px solid $special_grey;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      left: -60px;
+    }
+  }
 }

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   position: relative;
+  border-top: 1px solid $special_grey-4;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 18px, 24px);
@@ -10,13 +11,18 @@
     display: flex;
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    @include font-set (normal, normal, 20px, 30px);
+    margin-right: 79px;
+  }
 }
 
 .site-list__item {
   list-style: none;
   min-height: 30px;
   padding-top: 22px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
   border-bottom: 1px solid $special_grey-4;
 
   @media (min-width: $tablet-width) {
@@ -24,7 +30,6 @@
     padding: 0;
     padding-top: 42px;
     margin-left: 35px;
-    top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +58,7 @@
     color: $main-menu-down;
 
     @media (min-width: $desktop-width) {
-      color: $basic_white;
+      color: $basic-black;
       opacity: 0.3;
     }
   }
@@ -62,11 +67,11 @@
 .site-list__item--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic_green;
-    padding-bottom: 10px;
   }
 
+
   @media (min-width: $desktop-width) {
-    border-bottom: 2px solid $basic_white;
-    padding-bottom: 10px;
+    border-bottom: 2px solid $basic_green;
+    padding-bottom: 6px;
   }
 }

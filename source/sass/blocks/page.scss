@@ -3,16 +3,8 @@
 }
 
 .page__body {
-  max-width: 500px;
-  margin: 0 auto;
   display: grid;
   grid-template-rows: min-content, 1fr, min-content;
-
-  @media (min-width: $tablet-width) {
-    max-width: 899px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1800px;
-  }
+  margin: 0 auto;
+  overflow-x: hidden;
 }
