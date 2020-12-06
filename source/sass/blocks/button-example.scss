@@ -1,5 +1,7 @@
 .button-example {
   @include font-set (normal,normal, 16px, 20px);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   border: none;
   cursor: pointer;
   background-color: $bg-example;

@@ -1,11 +1,40 @@
 .advantages-product {
   text-align: center;
-  position: relative;
+}
+
+.advantages-product__wrapper {
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .advantages-product__title {
   @include font-set (normal, normal, 36px, 40px);
   text-transform: none;
+  text-align: left;
+  min-height: 20px;
+  margin-bottom: 18px;
+
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 60px, 60px);
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .advantages-product__list {
@@ -14,63 +43,242 @@
   margin: 0;
   padding: 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .advantages-product__item {
   @include font-set (normal, normal, 14px, 18px);
   text-transform: none;
   font-family: "Arial", sans-serif;
-  width: 176px;
+  min-width: 180px;
+  margin-left: 70px;
+  padding-top: 20px;
+  text-align: left;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1px 1fr;
+  grid-template-rows: 60px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 90px;
+    margin-right: 30px;
+    margin-left: 0;
+    width: 260px;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    margin-left: 0;
+    min-width: 200px;
+  }
 
   &:nth-child(1)::before {
     content: "";
+    display: inline;
     background-color: $basic_green;
     background-image: url("../img/iconleaf.svg");
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 10px;
     width: 60px;
     height: 60px;
-    position: absolute;
-    left: 300px;
+    position: relative;
+    right: 70px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      bottom: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      bottom: 90px;
+    }
   }
 
   &:nth-child(2)::before {
     content: "";
+    display: inline;
     background-color: $basic_green;
     background-image: url("../img/icontub.svg");
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 10px;
     width: 60px;
     height: 60px;
-    position: absolute;
-    left: 300px;
+    position: relative;
+    right: 70px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      bottom: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      bottom: 90px;
+    }
   }
 
   &:nth-child(3)::before {
     content: "";
+    display: inline;
     background-color: $basic_green;
     background-image: url("../img/iconeat.svg");
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 10px;
     width: 60px;
     height: 60px;
-    position: absolute;
-    left: 300px;
+    position: relative;
+    right: 70px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      bottom: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      bottom: 90px;
+    }
   }
 
   &:nth-child(4)::before {
     content: "";
+    display: inline;
     background-color: $basic_green;
     background-image: url("../img/iconalarm.svg");
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 10px;
     width: 60px;
     height: 60px;
+    position: relative;
+    right: 70px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      bottom: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      bottom: 90px;
+    }
+  }
+
+  &:nth-child(1)::after {
+    @include font-set (normal, normal, 280px, 280px);
+    content: "1";
+    font-family: "Oswald", sans-serif;
+    color: $gray-basic;
+    z-index: -1;
+    display: none;
     position: absolute;
-    left: 300px;
+
+    @media (min-width: $tablet-width) {
+      left: 125px;
+      bottom: -90px;
+      display: inline;
+    }
+  }
+
+  &:nth-child(2)::after {
+    @include font-set (normal, normal, 280px, 280px);
+    content: "2";
+    font-family: "Oswald", sans-serif;
+    color: $gray-basic;
+    z-index: -1;
+    display: none;
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      left: 105px;
+      bottom: -90px;
+      display: inline;
+    }
+  }
+
+  &:nth-child(3)::after {
+    @include font-set (normal, normal, 280px, 280px);
+    content: "3";
+    font-family: "Oswald", sans-serif;
+    color: $gray-basic;
+    z-index: -1;
+    display: none;
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      left: 110px;
+      bottom: -90px;
+      display: inline;
+    }
+  }
+
+  &:nth-child(4)::after {
+    @include font-set (normal, normal, 280px, 280px);
+    content: "4";
+    font-family: "Oswald", sans-serif;
+    color: $gray-basic;
+    z-index: -1;
+    display: none;
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      left: 110px;
+      bottom: -90px;
+      display: inline;
+    }
+  }
+}
+
+.advantages-product__description {
+  max-width: 430px;
+  margin-left: 30px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    max-width: 400px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    max-width: 400px;
   }
 }
