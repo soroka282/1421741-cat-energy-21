@@ -5,9 +5,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    width: 550px;
+    margin-right: 30px;
+    margin-left: 38px;
+    min-width: 550px;
   }
 }
 
@@ -15,17 +16,34 @@
   @include font-set (normal, normal, 16px, 16px);
   color: $special_dark-grey-1;
   text-transform: uppercase;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 20px, 20px);
+  }
 }
 
 .product-table__string {
-  @include font-set (normal, normal, 14px, 14px);
+  @include font-set (normal, normal, 16px, 20px);
   font-family: "Arial", sans-serif;
   color: $special_dark-grey;
   min-width: 280px;
+  margin-top: 4px;
+  margin-right: 4px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
-  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 16px, 20px);
+    color: $special_dark-grey;
+
+    justify-content: flex-end;
+  }
+}
+
+.product-table__cost {
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
 }

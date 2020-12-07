@@ -2,35 +2,74 @@
   text-transform: none;
 }
 
-.add-product__inner {
-  border-top: 2px solid $basic_green;
-  padding-bottom: 30px;
-  margin-top: 50px;
-  position: relative;
-  margin-left: 20px;
+.add-product__box {
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 899px;
+  }
 }
 
 .add-product__title {
   @include font-set (normal, normal, 24px, 24px);
-  position: absolute;
-  padding-right: 10px;
-  top: -38px;
   background-color: $basic_white;
+  width: 240px;
+  padding-right: 7px;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 14px;
+  text-align: left;
+
+  &::after {
+    content: "";
+    border-bottom: 2px solid $basic_green;
+    position: absolute;
+    width: 5000px;
+    transform: translateX(-50%);
+    top: 46%;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 36px, 36px);
+    width: 365px;
+    padding-left: 37px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    margin-left: 32px;
+
+    &::after {
+      content: "";
+      transform: translateX(-50%);
+      top: 50%;
+      z-index: -1;
+    }
+  }
 }
 
 .add-product__wrapper {
-  border-top: 1px solid $special_grey;
-  border-bottom: 1px solid $special_grey;
-  display: flex;
-  flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-width: 280px;
 
   @media (min-width: $tablet-width) {
     margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.add-product__inner {
+  border-bottom: 1px solid $special_grey;
+  border-top: 1px solid $special_grey;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $special_grey;
+    max-width: 899px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +80,31 @@
   }
 }
 
+.add-product__table {
+  padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+  min-width: 500px;
+  height: 70px;
+  margin-top: 0;
+  padding-top: 25px;
+  }
+}
+
+.add-product__string {
+  @media (min-width: $tablet-width) {
+  @include font-set (normal, normal, 16px, 20px);
+  color: $special_dark-grey;
+  }
+}
+
 .add-product__toggle {
+  @include font-set (normal, normal, 16px, 20px);
   min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 27px;
+    }
 }
