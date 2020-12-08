@@ -1,9 +1,40 @@
 .main-page {
   position: relative;
-  text-align: center;
+}
+
+.main-page__inner {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .main-page__title {
   @include font-set (normal, normal, 36px, 36px);
   text-transform: none;
+  margin-left: 20px;
+  margin-top: 28px;
+  margin-bottom: 42px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 60px, 60px);
+    margin-left: -105px;
+    margin-top: 60px;
+    margin-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set (normal, normal, 60px, 60px);
+    margin-left: -360px;
+    margin-top: 80px;
+    margin-bottom: 160px;
+  }
+}
+
+.main-page__box-gift-goods {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
 }

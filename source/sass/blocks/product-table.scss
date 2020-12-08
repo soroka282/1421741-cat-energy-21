@@ -1,21 +1,63 @@
 .product-table {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 38px;
+    min-width: 550px;
+  }
 }
 
 .product-table__name {
   @include font-set (normal, normal, 16px, 16px);
   color: $special_dark-grey-1;
   text-transform: uppercase;
+  margin-bottom: 6px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 20px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set (normal, normal, 20px, 20px);
+    margin-left: -35px;
+  }
 }
 
 .product-table__string {
-  @include font-set (normal, normal, 14px, 14px);
+  @include font-set (normal, normal, 14px, 20px);
   font-family: "Arial", sans-serif;
   color: $special_dark-grey;
+  min-width: 280px;
+  margin-top: 3px;
+  margin-right: 4px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 16px, 20px);
+    color: $special_dark-grey;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set (normal, normal, 16px, 20px);
+    justify-content: space-between;
+    transform: translateX(24px);
+  }
 }
 
-.food-cat-toggle,
-.add-product__toggle {
-  font-size: 16px;
-  line-height: 0px;
+.product-table__cost {
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -20px;
+  }
 }
