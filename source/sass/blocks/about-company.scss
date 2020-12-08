@@ -10,8 +10,6 @@
   position: relative;
   margin: 0 auto;
   max-width: 500px;
-  outline: 1px solid red;
-
 
   @media (min-width: $tablet-width) {
     max-width: 899px;
@@ -26,7 +24,7 @@
   min-width: 280px;
   margin-right: 20px;
   margin-left: 20px;
-  margin-top: 26px;
+  margin-top: 25px;
   display: flex;
   text-align: left;
   flex-direction: row;
@@ -35,7 +33,7 @@
   @media (min-width: $tablet-width) {
     margin-right: 70px;
     margin-left: 70px;
-    margin-top: 0px;
+    margin-top: -90px;
     padding-bottom: 40px;
   }
 
@@ -44,9 +42,9 @@
     position: absolute;
     background-color: $basic_white;
     width: 570px;
-    min-height: 150px;
+    min-height: 140px;
     justify-content: space-between;
-    top: 103px;
+    top: 91px;
     left: 110px;
     padding-top: 10px;
   }
@@ -55,9 +53,10 @@
 .about-company__invitation {
   @include font-set (normal, normal, 16px, 20px);
   width: 140px;
+  margin-right: -5px;
 
   @media (min-width: $tablet-width) {
-    @include font-set (normal, normal, 20px, 23px);
+    @include font-set (normal, normal, 20px, 24px);
     text-align: left;
     width: 171px;
   }
