@@ -44,7 +44,7 @@
     width: 570px;
     min-height: 140px;
     justify-content: space-between;
-    top: 91px;
+    top: 110px;
     left: 110px;
     padding-top: 10px;
   }
@@ -54,6 +54,7 @@
   @include font-set (normal, normal, 16px, 20px);
   width: 140px;
   margin-right: -5px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 24px);
@@ -76,6 +77,8 @@
   text-transform: none;
   color: $special_dark-grey;
   width: 140px;
+  margin-top: 5px;
+  padding-bottom: 10px;
 
   & br {
     display: none;

@@ -5,6 +5,8 @@
 .page-header__wrapper {
   margin: 0 auto;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -48,16 +50,8 @@
   }
 }
 
-.page-header__logo {
-  margin-left: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 0;
-  }
-}
-
 .page-header__site-name {
-  margin-right: 30px;
+  margin-right: 0;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -74,9 +68,14 @@
   position: relative;
   width: 24px;
   border: none;
-  top: 0;
-  right: 25px;
+  margin-left: 15px;
+}
+
+.page-header__toggle--opened {
+  top: -2px;
+  right: 0;
   border-bottom: 1.5px solid $basic-black;
+  display: none;
 
   &::before {
     content: "";
@@ -93,6 +92,32 @@
     left: 0;
     width: 24px;
     position: absolute;
+    border-bottom: 1.5px solid $basic-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__toggle--closed {
+  &::before {
+    content: "";
+    left: 0;
+    top: -2px;
+    width: 24px;
+    position: absolute;
+    transform: rotate(45deg);
+    border-bottom: 1.5px solid $basic-black;
+  }
+
+  &::after {
+    content: "";
+    top: -2px;
+    left: 0;
+    width: 24px;
+    position: absolute;
+    transform: rotate(-45deg);
     border-bottom: 1.5px solid $basic-black;
   }
 
