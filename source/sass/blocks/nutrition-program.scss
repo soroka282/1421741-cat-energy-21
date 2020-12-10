@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1800px;
+    max-width: 1440px;
   }
 }
 
@@ -160,14 +160,16 @@
   font-family: "Arial", sans-serif;
   text-transform: none;
   margin-top: 28px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   position: relative;
+  border-bottom: 1px solid $border-bottom-program;
 
   @media (min-width: $tablet-width) {
     @include font-set(normal, normal, 16px, 24px);
     width: 400px;
     margin-left: 0;
     margin-bottom: 30px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -179,19 +181,6 @@
 
     & br {
       display: none;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 240px;
-    bottom: -3%;
-    left: 0%;
-    border-bottom: 1px solid $border-bottom-program;
-
-    @media (min-width: $tablet-width) {
-      border: none;
     }
   }
 }
