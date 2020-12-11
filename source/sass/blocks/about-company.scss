@@ -25,6 +25,7 @@
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 25px;
+  padding-bottom: 4px;
   display: flex;
   text-align: left;
   flex-direction: row;
@@ -33,7 +34,6 @@
   @media (min-width: $tablet-width) {
     margin-right: 70px;
     margin-left: 70px;
-    margin-top: -90px;
     padding-bottom: 40px;
   }
 
@@ -44,7 +44,7 @@
     width: 570px;
     min-height: 140px;
     justify-content: space-between;
-    top: 110px;
+    top: 95px;
     left: 110px;
     padding-top: 10px;
   }
@@ -54,7 +54,7 @@
   @include font-set (normal, normal, 16px, 20px);
   width: 140px;
   margin-right: -5px;
-  margin-top: 5px;
+  margin-top: 8px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 24px);
@@ -77,8 +77,7 @@
   text-transform: none;
   color: $special_dark-grey;
   width: 140px;
-  margin-top: 5px;
-  padding-bottom: 10px;
+  margin-top: 8px;
 
   & br {
     display: none;

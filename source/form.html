@@ -14,7 +14,8 @@
         <div class='page-header__inner'>
           <img class='page-header__logo' src='https://via.placeholder.com/33x37' alt='Логотип сайта'>
           <img class='page-header__site-name' src='https://via.placeholder.com/101x18' alt='Cat energy'>
-          <button class='page-header__toggle' type='button'><span class='visually-hidden'>Открыть меню</span></button>
+          <button class='page-header__toggle page-header__toggle--opened' type='button'><span class='visually-hidden'>Открыть меню</span></button>
+          <button class='page-header__toggle page-header__toggle--closed' type='button'><span class='visually-hidden'>Закрыть меню</span></button>
         </div>
         <nav class='main-nav'>
           <ul class='main-nav__list site-list'>
@@ -46,11 +47,11 @@
               <h2 class='data-cat__title visually-hidden'>Данные кота</h2>
               <fieldset class='data-cat__group'>
                 <label class='data-cat__name' for='name-cat'>Имя:*</label>
-                <input class='data-cat__input' type='text' id='name-cat' name='name-cat' placeholder='Барсик' required>
+                <input class='data-cat__input input-box' type='text' id='name-cat' name='name-cat' placeholder='Барсик' required>
                 <label class='data-cat__name' for='weight-cat'>Вес (кг):*</label>
-                <input class='data-cat__input' type='number' id='weight-cat' name='weight-cat' placeholder='7' required>
+                <input class='data-cat__input input-box' type='number' id='weight-cat' name='weight-cat' placeholder='7' required>
                 <label class='data-cat__name' for='age-cat'>Возраст (лет):</label>
-                <input class='data-cat__input' type='number' id='age-cat' name='age-cat' placeholder='7'>
+                <input class='data-cat__input input-box' type='number' id='age-cat' name='age-cat' placeholder='7'>
               </fieldset>
             </div>
           </section>
@@ -75,9 +76,9 @@
               <h2 class='data-owner__title'>Контактные данные (владельца кота)</h2>
               <fieldset class='data-owner__group'>
                 <label class='data-owner__name' for='email'>E-mail:*</label>
-                <input class='data-owner__input' type='email' id='email' name='email-owner' placeholder='kuklachev@gmail.com' required>
+                <input class='data-owner__input input-box' type='email' id='email' name='email-owner' placeholder='kuklachev@gmail.com' required>
                 <label class='data-owner__name' for='tel'>Телефон:* </label>
-                <input class='data-owner__input' type='tel' id='tel' name='tel-owner' placeholder='8 (960) 900-60-90' required>
+                <input class='data-owner__input input-box' type='tel' id='tel' name='tel-owner' placeholder='8 (960) 900-60-90' required>
               </fieldset>
           </div>
         </section>

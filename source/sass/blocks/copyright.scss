@@ -6,14 +6,6 @@
 .copyright__name {
   @include font-set (normal, normal, 16px, 18px);
   font-family: "Arial", sans-serif;
-
-  &:hover {
-    color: $basic_green;
-  }
-
-  &:focus {
-    color: $special_dark-grey-opacity;
-  }
 }
 
 .copyright__name--big-text {

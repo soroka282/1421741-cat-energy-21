@@ -51,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1800px;
+    max-width: 1440px;
     margin-top: -60px;
   }
 }
@@ -71,6 +71,11 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 18px;
+  outline: none;
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 30px);

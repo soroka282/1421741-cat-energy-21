@@ -1,0 +1,17 @@
+  .input-box {
+    border: 1px solid $input-border;
+    box-sizing: border-box;
+    outline: none;
+
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $invalid;
+  }
+}
