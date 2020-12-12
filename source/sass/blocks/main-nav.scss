@@ -4,6 +4,9 @@
 
 .main-nav__list {
   @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
     margin-right: 60px;
+    outline: 1px solid red;
   }
 }

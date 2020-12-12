@@ -13,6 +13,10 @@
   }
 }
 
+.about-company--bg-color-catalog {
+  background-color: $gray-basic;
+}
+
 .about-company__wrapper {
   display: flex;
   flex-direction: column;
@@ -35,7 +39,6 @@
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 25px;
-  padding-bottom: 4px;
   display: flex;
   text-align: left;
   flex-direction: row;

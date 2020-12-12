@@ -11,11 +11,8 @@
     max-width: 899px;
   }
 
-  @media (min-width: $tablet-width) {
-    @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
       max-width: 1400px;
-      margin-bottom: 87px;
-    }
   }
 }
 
@@ -24,7 +21,7 @@
   min-height: 289px;
   background: url("../img/giftphotomobile.jpg") no-repeat;
   margin-top: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 43px;
   margin-left: 20px;
   margin-right: 20px;
   width: 280px;
@@ -35,6 +32,7 @@
     margin-right: 30px;
     background: url("../img/giftphototablet.jpg") no-repeat;
     margin-top: 70px;
+    margin-bottom: -15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +52,7 @@
   color: $basic-white;
   text-align: center;
   padding-top: 186px;
-  padding-left: 58px;
+  padding-left: 50px;
   padding-right: 61px;
   width: 170px;
 
@@ -62,13 +60,13 @@
     text-align: left;
     min-width: 161px;
     padding-top: 73px;
-    padding-left: 423px;
+    padding-left: 420px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    padding-top: 170px;
-    padding-left: 45px;
+    padding-top: 185px;
+    padding-left: 35px;
     padding-right: 61px;
   }
 
