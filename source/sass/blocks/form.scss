@@ -25,13 +25,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 23px;
-    padding-bottom: 55px;
-    margin-bottom: 32px;
+    padding-top: 26px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 33px;
+    padding-top: 30px;
     padding-bottom: 60px;
     margin: 0 auto;
     max-width: 1440px;
@@ -69,7 +68,7 @@
     @include font-set (normal, normal, 16px, 16px);
     margin-left: 60px;
     margin-right: 106px;
-    margin-top: 33px;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop-width) {

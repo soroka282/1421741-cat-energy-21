@@ -22,7 +22,8 @@
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
-    max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1220px;
   }
 }
 
@@ -64,12 +65,12 @@
   @media (min-width: $tablet-width) {
     @include font-set(normal, normal, 60px, 60px);
     min-width: 500px;
-    margin-top: 55px;
+    margin-top: 58px;
     margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 110px;
+    margin-top: 115px;
   }
 }
 
@@ -81,6 +82,10 @@
     min-width: 500px;
     margin-top: 35px;
     margin-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
   }
 }
 
@@ -132,16 +137,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 21.5%;
-    top: 38%;
-  }
-
-  &:hover {
-    background-color: $basic_green-2;
-  }
-
-  &:focus {
-    background-color: $basic_green-2;
-    color: $green-button-pressed;
+    left: 313px;
+    top: 335px;
   }
 }
