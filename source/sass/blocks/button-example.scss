@@ -10,4 +10,10 @@
     border-bottom: 1px solid $main-menu-down;
     outline: none;
   }
+
+  @media (min-width: $tablet-width) {
+    @include font-set (normal, normal, 20px, 30px);
+    border-bottom: 1px dotted $basic-black;
+    background-color: $basic_white;
+  }
 }
