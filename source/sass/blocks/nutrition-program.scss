@@ -73,6 +73,7 @@
     width: 525px;
     min-height: 374px;
     padding-bottom: 0;
+    margin-right: -7px;
   }
 
   &:first-child::before {
@@ -127,8 +128,8 @@
     @media (min-width: $desktop-width) {
       display: block;
       transform: scale(0.5);
-      left: -62px;
-      top: -14px;
+      left: -58px;
+      top: -12px;
     }
   }
 }
