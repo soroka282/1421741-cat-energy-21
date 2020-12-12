@@ -35,7 +35,6 @@
     min-height: 511px;
     width: 324px;
     margin-left: 30px;
-    outline: 1px solid purple;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,7 +61,6 @@
   margin-right: 20px;
   margin-left: 20px;
   max-width: 500px;
-  outline: 1px solid green;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -109,7 +107,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 1px solid red;
 
   @media (min-width: $tablet-width) {
     width: 168px;
@@ -213,7 +210,6 @@
     width: 320px;
     min-height: 429px;
     margin-top: 80px;
-    outline: 1px solid red;
     border: 2px solid $gray-basic;
   }
 

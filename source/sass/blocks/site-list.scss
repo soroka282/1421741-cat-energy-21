@@ -1,5 +1,7 @@
 .site-list {
-  @include font-set (normal, normal, 20px, 20px);
+  @include font-set (normal, 700, 20px, 20px);
+  margin: 0;
+  padding: 0;
   position: relative;
   border-top: 1px solid $special_grey-4;
 
@@ -12,6 +14,7 @@
 
   @media (min-width: $desktop-width) {
     @include font-set (normal, normal, 20px, 30px);
+    margin-right: 79px;
   }
 }
 

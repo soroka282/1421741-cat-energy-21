@@ -49,12 +49,13 @@
     @include font-set (normal, normal, 16px, 20px);
     color: $special_dark-grey;
     justify-content: flex-end;
+    transform: translateX(-10px);
   }
 
   @media (min-width: $desktop-width) {
     @include font-set (normal, normal, 16px, 20px);
     justify-content: space-between;
-    transform: translateX(28px);
+    transform: translateX(25px);
   }
 }
 
