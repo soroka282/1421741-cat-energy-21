@@ -2,12 +2,17 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    max-width: 899px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
-    max-width: 1800px;
   }
 }
 
@@ -22,24 +27,27 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 23px;
-    padding-bottom: 55px;
+    padding-top: 26px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 33px;
-    padding-bottom: 55px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    max-width: 1440px;
   }
 }
 
 .form__toggle {
   @include font-set (normal, normal, 16px, 20px);
   margin-top: 1px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 0);
     width: 282px;
-    height: 52px;
+    min-height: 52px;
     margin-top: 5px;
   }
 
@@ -47,7 +55,7 @@
     min-width: 568px;
     min-height: 52px;
     margin-top: 0;
-    margin-left: -333px;
+    margin-left: -285px;
   }
 }
 
@@ -62,11 +70,12 @@
     @include font-set (normal, normal, 16px, 16px);
     margin-left: 60px;
     margin-right: 106px;
-    margin-top: 33px;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
     margin-top: 33px;
+    padding-bottom: 23px;
   }
 }

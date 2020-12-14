@@ -13,13 +13,13 @@
 
   @media (min-width: $tablet-width) {
     max-width: 899px;
-    padding-top: 25px;
+    padding-top: 26px;
     padding-bottom: 70px;
+    margin: 0 auto;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1800px;
     padding-top: 30px;
     padding-bottom: 0;
     border: none;
@@ -44,15 +44,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
+    margin-left: -160px;
     margin-right: 80px;
   }
 }
 
 .data-cat__input {
   @include font-set (normal, normal, 16px, 18px);
-  border: 1px solid $input-border;
-  box-sizing: border-box;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 14px;
@@ -62,7 +60,7 @@
   min-width: 170px;
 
   &:nth-child(2) {
-    margin-top: 8px;
+    margin-top: 6px;
 
     @media (min-width: $tablet-width) {
       margin-left: 12px;

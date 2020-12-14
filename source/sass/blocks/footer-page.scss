@@ -16,8 +16,8 @@
   @media (min-width: $tablet-width) {
     max-width: 899px;
     flex-direction: row;
-    padding-top: 0;
-    padding-bottom: 43px;
+    padding-top: 10px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,6 +67,14 @@
     margin-top: 0;
     margin-right: -60px;
     margin-bottom: 0;
+  }
+
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:focus {
+    color: $special_dark-grey-opacity;
   }
 
   & svg {

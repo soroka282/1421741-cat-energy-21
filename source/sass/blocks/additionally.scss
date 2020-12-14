@@ -54,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1800px;
+    max-width: 1440px;
     margin-top: 2px;
   }
 }
@@ -86,7 +86,7 @@
     margin-right: 110px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 65px;
+    grid-column-gap: 110px;
   }
 }
 
@@ -118,6 +118,21 @@
       left: -50px;
       top: 5px;
     }
+  }
+
+  &:hover + .additionally__name::before {
+    border: 1px solid $hover-checkbox;
+  }
+
+  &:disabled + .additionally__name::before {
+    border: 1px solid $hover-checkbox;
+    opacity: 0.3;
+  }
+
+  &:disabled + .additionally__name {
+    opacity: 0.3;
+    color: $special_dark-grey-1;
+    cursor: default;
   }
 }
 

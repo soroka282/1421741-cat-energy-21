@@ -4,7 +4,7 @@
 
 .page__body {
   display: grid;
-  grid-template-rows: min-content, 1fr, min-content;
+  grid-template-columns: min-content, 1fr, min-content;
   margin: 0 auto;
   overflow-x: hidden;
 }

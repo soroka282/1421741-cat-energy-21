@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1800px;
+    max-width: 1440px;
     padding-bottom: 60px;
     padding-top: 0;
   }
@@ -80,10 +80,6 @@
   grid-template-columns: 60px 1fr;
   margin-top: 30px;
 
-  &:nth-child(4) {
-    padding-left: -20px;
-  }
-
   @media (min-width: $tablet-width) {
     margin-left: 71px;
     margin-right: 63px;
@@ -122,15 +118,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 68px;
-    min-width: 480px;
+    margin-right: 75px;
+    min-width: 486px;
     margin-top: 0;
-    padding-left: 0;
+    padding-left: 19px;
   }
 }
 
 .data-owner__name {
   @media (min-width: $desktop-width) {
     width: 100px;
+    margin-right: -15px;
   }
 }
