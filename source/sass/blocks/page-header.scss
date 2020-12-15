@@ -1,5 +1,10 @@
 .page-header {
   text-align: center;
+  border-bottom: 1px solid $special_grey-4;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .page-header__wrapper {
@@ -8,22 +13,21 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin: 0 auto;
     max-width: 899px;
-    padding-right: 30px;
+    margin-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    margin-top: 50px;
     display: flex;
-    padding-right: 30px;
+    padding-right: 40px;
     max-width: 1370px;
   }
 }
 
 .page-header__inner {
   margin: 0 auto;
-  min-height: 66px;
+  height: 66px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,36 +38,35 @@
     display: flex;
     margin-right: auto;
     align-items: center;
-    min-height: 51px;
-    margin-top: 30px;
-    max-width: 899px;
+    height: 51px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
-    min-height: 59px;
-    margin-left: 110px;
+    height: 59px;
+    margin-left: 150px;
+    margin-top: 5px;
   }
 }
 
 .page-header__logo {
-  padding-left: 20px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    margin-left: -50px;
   }
 }
 
 .page-header__site-name {
-  margin-right: 20px;
+  margin-right: 0;
 
   @media (min-width: $tablet-width) {
-    margin-right: 41px;
-    margin-left: 20px;
+    margin-left: 25px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 20px;
+    margin-right: 0;
   }
 }
 
@@ -71,8 +74,8 @@
   position: relative;
   width: 24px;
   border: none;
-  margin-right: 20px;
-  margin-left: -5px;
+  margin-right: 25px;
+  margin-left: 10px;
   display: none;
   background-color: $basic_white;
 }

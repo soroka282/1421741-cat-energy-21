@@ -3,7 +3,7 @@
 }
 
 .add-product__box {
-  max-width: 500px;
+  max-width: 540px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -18,12 +18,12 @@
 .add-product__title {
   @include font-set (normal, normal, 24px, 24px);
   background-color: $basic_white;
-  width: 240px;
+  min-width: 240px;
   padding-right: 7px;
   position: relative;
   padding-left: 20px;
-  padding-top: 7px;
-  padding-bottom: 14px;
+  padding-top: 3px;
+  padding-bottom: 15px;
   text-align: left;
 
   &::after {
@@ -47,7 +47,7 @@
     &::after {
       content: "";
       transform: translateX(-50%);
-      top: 50%;
+      top: 47%;
       z-index: -1;
     }
   }
@@ -58,7 +58,7 @@
     padding-top: 0;
     margin-top: -12px;
     padding-bottom: 50px;
-    margin-left: 62px;
+    margin-left: 72px;
 
     &::after {
       content: "";
@@ -89,14 +89,15 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $special_grey;
-    max-width: 899px;
+    max-width: 845px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    max-width: 896px;
     justify-content: space-between;
-    width: 896px;
-    margin-left: 80px;
+    align-items: center;
+    margin-left: 75px;
     border: none;
     border-top: 1px solid $special_grey;
     border-bottom: 1px solid $special_grey;
@@ -104,7 +105,7 @@
 }
 
 .add-product__table {
-  padding-top: 13px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     min-width: 500px;
@@ -116,7 +117,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 500px;
-    height: 72px;
+    min-height: 72px;
     padding-top: 23px;
   }
 }
@@ -124,17 +125,18 @@
 .add-product__toggle {
   @include font-set (normal, normal, 16px, 20px);
   min-width: 280px;
-  margin-top: 9px;
-  margin-bottom: 18px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-left: 38px;
     margin-right: 38px;
+    margin-top: 9px;
     margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin-left: 51px;
     margin-right: 0;
     margin-top: 15px;
     margin-bottom: 15px;
