@@ -14,13 +14,13 @@
 
 .example__wrapper {
   position: relative;
-  max-width: 500px;
+  max-width: 545px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
-    max-width: 899px;
+    max-width: 845px;
     padding-bottom: 70px;
   }
 
