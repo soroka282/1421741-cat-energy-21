@@ -63,6 +63,7 @@
 
   & svg {
     fill: $special_grey-3;
+
     @media (min-width: $tablet-width) {
       transform: scale(1.3);
     }
