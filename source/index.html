@@ -14,8 +14,13 @@
     <header class='page-header'>
       <div class='page-header__wrapper'>
         <div class='page-header__inner'>
-          <img class='page-header__logo' src='https://via.placeholder.com/33x37' alt='Логотип сайта'>
-          <img class='page-header__site-name' src='https://via.placeholder.com/101x18' alt='Cat energy'>
+
+          <picture>
+            <source media='(min-width: 1440px)' srcset='../img/logodesktop.svg'>
+            <source media='(min-width: 768px)' srcset='../img/logotablet.svg'>
+            <img class='page-header__logo' src='../img/logomobile.svg' alt='Логотип сайта'>
+          </picture>
+          <img class='page-header__site-name' src='../img/logo.svg' alt='Cat energy'>
           <button class='page-header__toggle page-header__toggle--opened' type='button'><span class='visually-hidden'>Открыть меню</span></button>
           <button class='page-header__toggle page-header__toggle--closed' type='button'><span class='visually-hidden'>закрыть меню</span></button>
         </div>
@@ -160,7 +165,7 @@
 
     <footer class='footer-page'>
       <div class='footer-page__wrapper'>
-        <img class='footer-page__site-name' src='https://via.placeholder.com/128x24' alt='Cat Energy'>
+        <img class='footer-page__site-name' src='../img/logo.svg' alt='Cat Energy'>
 
         <section class='footer-page__social social'>
           <h3 class='visually-hidden'>Социальные сети</h3>
