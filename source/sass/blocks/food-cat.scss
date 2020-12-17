@@ -112,7 +112,8 @@
     width: 168px;
     height: 200px;
     position: absolute;
-    bottom: 72%;
+    bottom: 70%;
+    align-items: flex-end;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,7 +125,7 @@
 }
 
 .food-cat__img {
-  margin-top: 40px;
+  margin-top: 48px;
   grid-column: 1/2;
   grid-row: 1/3;
 }
