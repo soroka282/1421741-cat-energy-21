@@ -32,6 +32,17 @@
   justify-content: space-between;
   max-width: 500px;
 
+  & .page-header__logo,
+  .page-header__site-name {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     display: flex;
