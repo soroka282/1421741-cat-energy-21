@@ -4,6 +4,7 @@
 }
 
 .caption__wrapper {
+  z-index: 1;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -35,8 +36,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 430px;
-  min-width: 93%;
-  padding-left: 20px;
+  min-width: 100%;
   background: linear-gradient(to top, $basic_white 30%, $bg_green 30%),
     url("../img/indexbackgroundemobile.jpg") no-repeat 50% 0%,
     linear-gradient(90deg, $bg-caption 0%, $bg-caption-2 5%, $bg-caption-2 95%, $bg-caption 100%);
@@ -53,27 +53,15 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/indexbackgrounddesktop.jpg") no-repeat left;
-      background-size: cover;
-      width: 720px;
-      height: 699px;
-      right: 0%;
-      bottom: 37.7%;
-      z-index: -1;
-    }
   }
 }
 
 .caption__text {
   @include font-set(normal, normal, 36px, 36px);
   text-transform: none;
-  margin-top: 28px;
+  margin-top: 25px;
   margin-bottom: 10px;
-  margin-left: -20px;
+  margin-left: -5px;
   width: 249px;
 
   @media (min-width: $tablet-width) {
@@ -89,7 +77,7 @@
 }
 
 .caption__slogan {
-  margin-left: -20px;
+  margin-left: -10px;
 
   @media (min-width: $tablet-width) {
     @include font-set(normal, normal, 20px, 20px);
@@ -108,6 +96,7 @@
   bottom: 45px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -119,10 +108,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     width: 552px;
     height: 500px;
     top: -400px;
-    left: 425px;
+    left: 725px;
   }
 }
 
