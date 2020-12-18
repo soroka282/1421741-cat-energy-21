@@ -78,3 +78,39 @@
     padding-bottom: 6px;
   }
 }
+
+
+.site-item--index-color {
+  & a {
+    @media (min-width: $desktop-width) {
+      color: $basic_white;
+    }
+
+    &:hover {
+      color: $main-menu-hover;
+
+      @media (min-width: $desktop-width) {
+        color: $basic_white;
+        opacity: 0.6;
+      }
+    }
+
+    &:focus {
+      color: $main-menu-down;
+
+      @media (min-width: $desktop-width) {
+        color: $basic_white;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.site-list__item--index-active {
+  & a {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $basic_white;
+      padding-bottom: 6px;
+    }
+  }
+}
