@@ -61,7 +61,7 @@
     }
   }
 
-  & svg {
+  & .social__item-svg {
     fill: $special_grey-3;
 
     @media (min-width: $tablet-width) {
@@ -69,11 +69,26 @@
     }
   }
 
-  &:hover svg {
+  &:hover .social__item-svg {
     fill: $basic_green;
   }
 
-  &:focus svg {
-    fill: $main-menu-down;
+  &:active .social__item-svg {
+    fill: $basic_green;
+    opacity: 0.3;
+  }
+
+  .social__item-svg--stroke {
+    stroke: $special_grey-3;
+    fill: $gray-basic;
+  }
+
+  &:hover .social__item-svg--stroke {
+    stroke: $basic_green;
+  }
+
+  &:active .social__item-svg--stroke {
+    stroke: $basic_green;
+    opacity: 0.3;
   }
 }
