@@ -122,7 +122,7 @@
   margin-top: 5px;
   border: 1px solid $special_grey;
   border-radius: 3px;
-  margin-right: 30px;
+  margin-right: 28px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 30px, 37px);
@@ -167,6 +167,7 @@
   width: 84px;
   height: 30px;
   margin-top: 5px;
+  margin-right: 5px;
   border: 1px solid $special_grey;
   border-radius: 3px;
 
@@ -303,7 +304,6 @@
     width: 428px;
     height: 6px;
     left: 5px;
-    top: 5px;
   }
 }
 

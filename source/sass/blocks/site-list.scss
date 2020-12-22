@@ -27,12 +27,14 @@
   min-height: 30px;
   padding-top: 22px;
   padding-bottom: 12px;
+  margin-right: 5px;
   border-bottom: 1px solid $special_grey-4;
 
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
     padding-top: 20px;
+    margin-right: 0;
 
     &:nth-child(3n + 2) {
       margin-right: 37px;

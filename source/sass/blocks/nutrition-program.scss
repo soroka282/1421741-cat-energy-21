@@ -39,8 +39,8 @@
     align-items: center;
     min-width: 570px;
     min-height: 374px;
-    margin-right: 110px;
-    margin-left: 110px;
+    margin-right: 112px;
+    margin-left: 112px;
   }
 }
 
@@ -219,16 +219,22 @@
   & svg {
     fill: $basic-black;
     stroke: $basic-black;
-    margin-left: 15px;
+    margin-left: 13px;
+    width: 24px;
+    height: 12px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 25px;
+      margin-left: 20px;
     }
   }
 
-  &:active svg {
+  &:active {
     color: $main-menu-hover;
+  }
+
+  &:active svg {
     fill: $main-menu-hover;
+    stroke: $main-menu-hover;
   }
 
   @media (min-width: $tablet-width) {
