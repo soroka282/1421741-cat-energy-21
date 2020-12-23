@@ -65,6 +65,7 @@
   text-transform: none;
   padding-top: 7px;
   padding-bottom: 15px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 16px, 16px);

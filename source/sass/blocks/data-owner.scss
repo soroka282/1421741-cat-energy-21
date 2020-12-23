@@ -144,6 +144,7 @@
   right: 20px;
   top: 20px;
   stroke: $special_dark-grey-1;
+  fill: $basic_white;
 
   @media (min-width: $tablet-width) {
     top: 15px;
@@ -159,7 +160,6 @@
   position: absolute;
   right: 17px;
   top: 78px;
-  stroke: $special_dark-grey-1;
 
   @media (min-width: $tablet-width) {
     top: 84px;
