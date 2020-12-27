@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'/>
     <title>HTML Academy: Кэт энерджи</title>
-    <link href='css/style.css' rel='stylesheet'>
+    <link href='css/style.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="img/favicon16.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="img/favicon32.ico" type="image/x-icon"/>
   </head>
@@ -62,9 +62,9 @@
               <p class='nutrition-program__description nutrition-program__description--border'>Ваш кот весит больше собаки и почти утратил
                 способность лазить по деревьям?
                 Пора на диету! Cat Energy Slim поможет вашему
-                питомцу<br> сбросить лишний вес.</p>
+                питомцу <br>сбросить лишний вес.</p>
                 <a class='nutrition-program__link' href='catalog-slim.href'>Каталог Slim
-                  <svg>
+                  <svg width="32" height="12" viewBox="0 1 32 12">
                     <use xlink:href='img/sprite.svg#arrow'></use>
                   </svg>
                 </a>
@@ -73,11 +73,11 @@
             <li class='nutrition-program__item nutrition-program__item--weight-gain'>
               <h2 class='nutrition-program__title'>Набор массы</h2>
               <p class='nutrition-program__description nutrition-program__description--indentation'>Заработать авторитет среди
-                дворовых котов<br> и даже собак?
+                дворовых котов <br>и даже собак?
                 Серия Cat Energy Pro поможет вашему
-                коту нарастить необходимые<br> мышцы!</p>
+                коту нарастить необходимые <br>мышцы!</p>
                 <a class='nutrition-program__link' href='catalog-pro.html'>Каталог pro
-                  <svg>
+                  <svg width="32" height="12" viewBox="0 1 32 12">
                     <use xlink:href='img/sprite.svg#arrow'></use>
                   </svg>
                 </a>
@@ -107,7 +107,7 @@
             </li>
             <li class='advantages-product__item'>
               <p class='advantages-product__description'>Уже через месяц наслаждайтесь
-              изменениями к лучшему<br> вашего питомца!</p>
+              изменениями к лучшему <br>вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -157,16 +157,16 @@
             <h2 class='visually-hidden'>О компании</h2>
             <p class='about-company__invitation'>приглашаем<br> к сотрудничеству дилеров!<p>
             <p class='about-company__adress'>ул. Большая
-              Конюшенная, д. 19/8<br><br>
+              Конюшенная, д. 19/8<br class='about-company__adress--new-string'><br class='about-company__adress--new-string'>
               Санкт-Петербург</p>
           </div>
-          <picture>
+          <picture class='about-company__map'>
             <source media='(min-width: 1440px)' type='image/webp' srcset='img/map.webp 1x, img/map@2x.webp 2x'>
             <source media='(min-width: 768px)' type='image/webp' srcset='img/locationtablet.webp 1x, img/locationtablet@2x.webp 2x'>
             <source type='image/webp' srcset='img/location.webp 1x, img/location@2x.webp 2x'>
             <source media='(min-width: 1440px)' srcset='img/map.jpg 1x, img/map@2x.jpg 2x'>
-            <source media='(min-width: 768px)' srcset='img/location.png 1x, img/location@2x.png 2x'>
-            <img class='about-company__map' src='img/location.jpg' srcset='img/location@2x.jpg 2x' alt='Карта офиса Cat Energy'>
+            <source media='(min-width: 768px)' srcset='img/locationtablet.png 1x, img/locationtablet@2x.png 2x'>
+            <img src='img/location.jpg' srcset='img/location@2x.jpg 2x' alt='Карта офиса Cat Energy'>
           </picture>
         </div>
       </section>
