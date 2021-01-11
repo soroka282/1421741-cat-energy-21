@@ -9,6 +9,8 @@
   &:hover {
     border-bottom: 1px solid $main-menu-down;
     outline: none;
+    box-sizing: border-box;
+    margin-bottom: -1px;
   }
 
   @media (min-width: $tablet-width) {

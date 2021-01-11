@@ -2,6 +2,7 @@
 <html class='page' lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Функциональное питание для котов Cat Energy">
     <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'/>
     <title>HTML Academy: Кэт энерджи</title>
     <link href='css/style.min.css' rel='stylesheet'>
@@ -14,18 +15,16 @@
     <header class='page-header'>
       <div class='page-header__wrapper'>
         <div class='page-header__inner'>
-
           <picture>
             <source media='(min-width: 1440px)' srcset='img/logodesktop.svg'>
             <source media='(min-width: 768px)' srcset='img/logotablet.svg'>
             <img class='page-header__logo' src='img/logomobile.svg' alt='Логотип сайта'>
           </picture>
           <img class='page-header__site-name' src='img/logo.svg' alt='Cat energy'>
-          <button class='page-header__toggle page-header__toggle--opened' type='button'><span class='visually-hidden'>Открыть меню</span></button>
-          <button class='page-header__toggle page-header__toggle--closed' type='button'><span class='visually-hidden'>закрыть меню</span></button>
+          <button class='page-header__toggle page-header__toggle--opened page-header__toggle--hidden' type='button'><span class='visually-hidden'>закрыть меню</span></button>
         </div>
         <nav class='main-nav'>
-          <ul class='main-nav__list site-list'>
+          <ul class='main-nav__list site-list site-list--close site-list--no-js'>
             <li class='site-list__item site-list__item--active site-item--index-color site-list__item--index-active'><a href='#'>Главная</a></li>
             <li class='site-list__item site-item--index-color'><a href='catalog.html'>Каталог продукции</a></li>
             <li class='site-list__item site-item--index-color'><a href='form.html'>Подбор программы</a></li>
@@ -38,7 +37,7 @@
       <section class='caption'>
         <div class='caption__wrapper'>
           <div class='caption__inner'>
-            <h1 class='caption__text'>Функциональное питание для котов</h1>
+            <h1 class='caption__text'> Функциональное питание для котов</h1>
             <p class='caption__slogan'>Занялся собой? Займись котом!</p>
           </div>
           <picture>
@@ -49,7 +48,7 @@
             <source media='(min-width: 768px)' srcset='img/indexcantablet.png 1x, img/indexcantablet@2x.png 2x'>
             <img class='caption__image' src='img/indexcanmobile.png' srcset='img/indexcanmobile@2x.png 2x' width='280' height='270' alt='Пачка кошачьего корма'>
           </picture>
-          <button class='caption__toggle-choice button'>Подобрать программу</button>
+          <a class='caption__toggle-choice' href='form.html'>Подобрать программу</a>
         </div>
       </section>
 
@@ -62,7 +61,7 @@
               <p class='nutrition-program__description nutrition-program__description--border'>Ваш кот весит больше собаки и почти утратил
                 способность лазить по деревьям?
                 Пора на диету! Cat Energy Slim поможет вашему
-                питомцу <br>сбросить лишний вес.</p>
+                питомцу<br> сбросить лишний вес.</p>
                 <a class='nutrition-program__link' href='catalog-slim.href'>Каталог Slim
                   <svg width="32" height="12" viewBox="0 1 32 12">
                     <use xlink:href='img/sprite.svg#arrow'></use>
@@ -92,13 +91,13 @@
           <ul class='advantages-product__list'>
             <li class='advantages-product__item '>
               <p class='advantages-product__description'>Функциональное питание
-              содержит только полезные
-              питательные вещества.</p>
+                содержит только полезные
+                питательные вещества.</p>
             </li>
             <li class='advantages-product__item'>
               <p class='advantages-product__description'>Выпускается в виде порошка,
-    который нужно лишь залить
-    кипятком и готово.</p>
+                который нужно лишь залить
+                кипятком и готово.</p>
             </li>
             <li class='advantages-product__item'>
               <p class='advantages-product__description'>Замените один-два приема
@@ -107,7 +106,7 @@
             </li>
             <li class='advantages-product__item'>
               <p class='advantages-product__description'>Уже через месяц наслаждайтесь
-              изменениями к лучшему <br>вашего питомца!</p>
+              изменениями <br class='advantages-product__description-br'>к лучшему <br>вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -115,38 +114,49 @@
 
       <section class='example'>
         <div class='example__wrapper'>
-          <h2 class='example__title'>Живой пример</h2>
-          <p class='example__text'>Борис сбросил 5 кг за 2 месяца, просто заменив
-            свой обычный корм на Cat Energy Slim. Отличный
-            результат без изнуряющих тренировок!
-            При этом он не менял своих привычек и
-            по-прежнему спит по 16 часов в день.</p>
-          <div class='example__inner'>
-            <fieldset class='example__weight'>
-              <legend>снижение веса</legend>
-              <p>5 кг</p>
-            </fieldset>
-            <fieldset class='example__time'>
-              <legend>затрачено времени</legend>
-              <p>60 дней</p>
-            </fieldset>
-            <p class='example__cost-nutrition'>Затраты на питание: <span> 15 000 руб.</span></p>
-          </div>
-          <div class=example__cat>
-            <picture>
-              <source media='(min-width: 768px)' srcset='img/catfat.webp 1x, img/catfat@2x.webp 2x'>
-              <source srcset='img/beforemobile.webp 1x, img/beforemobile@2x.webp 2x'>
-              <source media='(min-width: 768px)' srcset='img/catfat.png 1x, img/catfat@2x.png 2x'>
-              <img class='example__cat-fat' src='img/beforemobile.png' srcset='img/beforemobile@2x.png 2x' alt='Толстый кот'>
-            </picture>
-            <img class='example__cat-slim visually-hidden' src='https://via.placeholder.com/311x232' alt='Худой кот'>
-          </div>
-          <div class=example__wrap-slider-toggle>
-            <button class='example__toggle-prev button-example' type='button'>Было</button>
-            <div class='example__slider-wrap'>
-              <div class='example__slider-toggle'></div>
+
+          <div>
+            <h2 class='example__title'>Живой пример</h2>
+            <p class='example__text'>Борис сбросил 5 кг за 2 месяца, просто заменив
+              свой обычный корм на Cat Energy Slim. Отличный
+              результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и
+              по-прежнему спит по 16 часов в день.</p>
+            <div class='example__inner'>
+              <fieldset class='example__weight'>
+                <legend>снижение веса</legend>
+                <p>5 кг</p>
+              </fieldset>
+              <fieldset class='example__time'>
+                <legend>затрачено времени</legend>
+                <p>60 дней</p>
+              </fieldset>
+              <p class='example__cost-nutrition'>Затраты на питание: <span> 15 000 руб.</span></p>
             </div>
-            <button class='example__toggle-next button-example' type='button'>Стало</button>
+          </div>
+
+          <div>
+            <div class=example__cat>
+              <picture>
+                <source media='(min-width: 768px)' type='image/webp' srcset='img/catfat.webp 1x, img/catfat@2x.webp 2x'>
+                <source type='image/webp' srcset='img/beforemobile.webp 1x, img/beforemobile@2x.webp 2x'>
+                <source media='(min-width: 768px)' srcset='img/catfat.png 1x, img/catfat@2x.png 2x'>
+                <img class='example__cat-fat' src='img/beforemobile.png' srcset='img/beforemobile@2x.png 2x' alt='Толстый кот'>
+              </picture>
+              <picture>
+                <source media='(min-width: 768px)' type='image/webp' srcset='img/catskinny.webp 1x, img/catskinny@2x.webp 2x'>
+                <source type='image/webp' srcset='img/catskinny.webp 1x, img/catskinny@2x.webp 2x'>
+                <source media='(min-width: 768px)' srcset='img/catskinny.png 1x, img/catskinny@2x.png 2x'>
+                <img class='example__cat-slim example__cat--hidden' src='img/catskinny.png' srcset='img/catskinny@2x.png 2x' alt='Худой кот'>
+              </picture>
+            </div>
+            <div class=example__wrap-slider-toggle>
+              <button class='example__toggle-prev button-example' type='button'>Было</button>
+              <div class='example__slider-wrap'>
+                <div class='example__slider-toggle example__slider-toggle--prev-active'></div>
+              </div>
+              <button class='example__toggle-next button-example' type='button'>Стало</button>
+            </div>
           </div>
         </div>
       </section>
@@ -160,14 +170,17 @@
               Конюшенная, д. 19/8<br class='about-company__adress--new-string'><br class='about-company__adress--new-string'>
               Санкт-Петербург</p>
           </div>
-          <picture class='about-company__map'>
+        </div>
+        <div class='about-company__map'>
+          <picture class='about-company__map-img'>
             <source media='(min-width: 1440px)' type='image/webp' srcset='img/map.webp 1x, img/map@2x.webp 2x'>
             <source media='(min-width: 768px)' type='image/webp' srcset='img/locationtablet.webp 1x, img/locationtablet@2x.webp 2x'>
             <source type='image/webp' srcset='img/location.webp 1x, img/location@2x.webp 2x'>
             <source media='(min-width: 1440px)' srcset='img/map.jpg 1x, img/map@2x.jpg 2x'>
-            <source media='(min-width: 768px)' srcset='img/locationtablet.png 1x, img/locationtablet@2x.png 2x'>
+            <source media='(min-width: 768px)' srcset='img/location.png 1x, img/location@2x.png 2x'>
             <img src='img/location.jpg' srcset='img/location@2x.jpg 2x' alt='Карта офиса Cat Energy'>
           </picture>
+          <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871631434!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609156434554!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" aria-label="Карта офиса 'Cat energy'"></iframe>
         </div>
       </section>
 
@@ -211,5 +224,6 @@
         </a>
       </div>
     </footer>
+    <script src='js/script.min.js'></script>
   </body>
 </html>

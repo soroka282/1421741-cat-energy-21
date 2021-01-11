@@ -36,8 +36,9 @@
     flex-direction: row;
     margin-top: -270px;
     justify-content: space-between;
-    align-items: center;
-    min-width: 570px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-width: 580px;
     min-height: 374px;
     margin-right: 112px;
     margin-left: 112px;
@@ -78,10 +79,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 525px;
+    width: 518px;
     min-height: 374px;
     padding-bottom: 0;
-    margin-right: -7px;
   }
 
   &:first-child::before {
@@ -92,7 +92,7 @@
     background-image: url("../img/catsit.svg");
     position: absolute;
     left: 22px;
-    top: 9%;
+    top: 20px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/catsit.svg");
@@ -108,8 +108,8 @@
     @media (min-width: $desktop-width) {
       display: block;
       transform: scale(0.5);
-      left: 2px;
-      top: -12px;
+      left: 1px;
+      top: -10px;
     }
   }
 
@@ -121,7 +121,7 @@
     background-image: url("../img/catgo.svg");
     position: absolute;
     left: 12px;
-    top: 9%;
+    top: 23px;
 
     @media (min-width: $tablet-width) {
       background-repeat: no-repeat;
@@ -136,8 +136,8 @@
     @media (min-width: $desktop-width) {
       display: block;
       transform: scale(0.5);
-      left: -58px;
-      top: -12px;
+      left: -55px;
+      top: -8px;
     }
   }
 }
@@ -196,7 +196,7 @@
 
   @media (min-width: $desktop-width) {
     @include font-set(normal, normal, 16px, 24px);
-    width: 460px;
+    width: 465px;
     margin-top: 75px;
     padding-bottom: 0;
     padding-right: 10px;
@@ -230,7 +230,7 @@
     margin-left: 13px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 20px;
+      margin-left: 21px;
     }
   }
 

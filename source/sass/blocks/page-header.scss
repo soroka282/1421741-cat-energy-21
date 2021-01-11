@@ -53,9 +53,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-items: center;
     min-height: 59px;
     margin-left: 75px;
+    margin-right: auto;
     margin-top: 0;
+    width: 300px;
   }
 }
 
@@ -68,7 +71,8 @@
 }
 
 .page-header__site-name {
-  margin-right: 0;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -77,36 +81,44 @@
 
 .page-header__toggle {
   position: relative;
+  left: 1px;
   width: 24px;
+  height: 18px;
   border: none;
-  margin-right: 25px;
   margin-left: 10px;
-  display: none;
+  margin-right: 25px;
   background-color: $basic_white;
+  outline: none;
 }
 
 .page-header__toggle--opened {
-  top: -2px;
+  top: -10px;
   right: 0;
-  border-bottom: 1.5px solid $basic-black;
-  display: none;
+  border-bottom: 2px solid $basic-black;
+  display: block;
 
   &::before {
     content: "";
     left: 0;
-    top: -5px;
+    top: 8px;
     width: 24px;
     position: absolute;
-    border-bottom: 1.5px solid $basic-black;
+    border-bottom: 2px solid $basic-black;
+    transition-duration: 0.9s, 0.3s;
+    transition-delay: 0.9s, 0s;
+    transition-property: top, transform;
   }
 
   &::after {
     content: "";
-    top: 8px;
+    top: 25px;
     left: 0;
     width: 24px;
     position: absolute;
-    border-bottom: 1.5px solid $basic-black;
+    border-bottom: 2px solid $basic-black;
+    transition-duration: 0.9s, 0.3s;
+    transition-delay: 0.9s, 0s;
+    transition-property: bottom, transform;
   }
 
   @media (min-width: $tablet-width) {
@@ -115,29 +127,38 @@
 }
 
 .page-header__toggle--closed {
+  position: relative;
+  top: -1px;
   display: block;
+  border: none;
 
   &::before {
     content: "";
     left: 0;
-    top: -2px;
+    top: 8px;
     width: 24px;
     position: absolute;
+    border-bottom: 2px solid $basic-black;
     transform: rotate(45deg);
-    border-bottom: 1.5px solid $basic-black;
+    transition-delay: 0s, 0.3s;
   }
 
   &::after {
     content: "";
-    top: -2px;
+    top: 8px;
     left: 0;
     width: 24px;
     position: absolute;
+    border-bottom: 2px solid $basic-black;
     transform: rotate(-45deg);
-    border-bottom: 1.5px solid $basic-black;
+    transition-delay: 0s, 0.3s;
   }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.page-header__toggle--hidden {
+  display: none;
 }

@@ -34,11 +34,11 @@
 .program-choice__title {
   @include font-set (normal, normal, 36px, 36px);
   text-transform: none;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 60px, 60px);
-    padding-top: 10px;
+    padding-top: 8px;
     margin-left: 39px;
   }
 
