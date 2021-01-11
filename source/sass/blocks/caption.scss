@@ -41,6 +41,12 @@
     url("../img/indexbackgroundemobile.jpg") no-repeat 50% 0%,
     linear-gradient(90deg, $bg-caption 0%, $bg-caption-2 5%, $bg-caption-2 95%, $bg-caption 100%);
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(to top, $basic_white 30%, $bg_green 30%),
+      url("../img/indexbackgroundmobile@2x.jpg")  no-repeat 50% 0% contain,
+      linear-gradient(90deg, $bg-caption 0%, $bg-caption-2 5%, $bg-caption-2 95%, $bg-caption 100%);
+  }
+
   @media (min-width: $tablet-width) {
     background: none;
     color: $basic-black;
@@ -81,12 +87,12 @@
 
   @media (min-width: $tablet-width) {
     @include font-set(normal, normal, 20px, 20px);
-    min-width: 500px;
+    width: 500px;
     margin-top: 35px;
     margin-left: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 30px;
   }
 }
@@ -122,10 +128,12 @@
   background-color: $basic_green;
   border: 1px 1px var(--basic-white);
   width: 280px;
-  min-height: 40px;
+  min-height: 20px;
   outline: none;
   cursor: pointer;
   margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
   position: relative;
   left: 50%;
@@ -138,7 +146,9 @@
     left: 30.5%;
     transform: translateX(-50%);
     width: 244px;
-    min-height: 54px;
+    padding-top: 25px;
+    padding-bottom: 19px;
+    min-height: 10px;
   }
 
   @media (min-width: $desktop-width) {

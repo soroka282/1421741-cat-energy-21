@@ -94,10 +94,11 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    max-width: 896px;
-    justify-content: space-between;
+    max-width: 890px;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 75px;
+    margin-left: 80px;
+    padding-right: 5px;
     border: none;
     border-top: 1px solid $special_grey;
     border-bottom: 1px solid $special_grey;

@@ -23,6 +23,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
+    margin-left: -17px;
   }
 }
 
@@ -94,13 +95,14 @@
 }
 
 .program-selection__name {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   position: relative;
   margin-left: 45px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-left: 87px;
+    margin-top: -1px;
   }
 
   &::before {

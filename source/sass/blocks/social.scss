@@ -10,6 +10,7 @@
   border-bottom: 1px solid $border-bottom-program;
   min-width: 280px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
   margin-top: 33px;
@@ -19,13 +20,13 @@
   @media (min-width: $tablet-width) {
     border-top: none;
     border-bottom: none;
-    margin-top: 25px;
+    margin-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     padding-top: 0;
-    margin-top: 0;
+    margin-top: -5px;
     margin-left: 5px;
     padding-bottom: 0;
   }
