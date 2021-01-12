@@ -13,6 +13,13 @@
     margin-bottom: -1px;
   }
 
+  &:active {
+    border-bottom: none;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     @include font-set (normal, normal, 20px, 30px);
     border-bottom: 1px dotted $basic-black;
@@ -21,5 +28,6 @@
 
   @media (min-width: $desktop-width) {
     background-color: $bg-example-desktop;
+    margin-top: -3px;
   }
 }
