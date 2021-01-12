@@ -9,6 +9,7 @@
 
   &:focus {
     border: 2px solid $special_dark-grey;
+    box-sizing: border-box;
   }
 
   &:invalid {

@@ -25,7 +25,7 @@
           <a href='index.html'>
             <img class='page-header__site-name' src='img/logo.svg' alt='Cat energy'>
           </a>
-          <button class='page-header__toggle page-header__toggle--opened page-header__toggle--hidden' type='button'><span class='visually-hidden'>закрыть меню</span></button>
+          <button class='page-header__toggle page-header__toggle--opened page-header__toggle--hidden' type='button'><span class='visually-hidden'>меню</span></button>
         </div>
         <nav class='main-nav'>
           <ul class='main-nav__list site-list site-list--close site-list--no-js'>
@@ -43,7 +43,7 @@
       <section class='program-choice'>
         <div class='program-choice__wrapper'>
           <div class='program-choice__inner'>
-            <h1 class='program-choice__title'>Подбор программы</h1>
+            <h1 class='program-choice__title' tabindex="0">Подбор программы</h1>
             <p class='program-choice__description'>Заполните анкету, и мы подберем <br>
               программу питания для вашего кота</p>
           </div>
@@ -54,7 +54,7 @@
         <div class='form__wrapper'>
           <section class='data-cat'>
             <div class='data-cat__wrapper'>
-              <h2 class='data-cat__title visually-hidden'>Данные кота</h2>
+              <h2 class='data-cat__title visually-hidden' tabindex="0">Данные кота</h2>
               <fieldset class='data-cat__group'>
                 <label class='data-cat__name' for='name-cat'>Имя:*</label>
                 <input class='data-cat__input input-box' type='text' id='name-cat' name='name-cat' placeholder='Барсик' required>
@@ -68,13 +68,13 @@
 
           <section class='program-selection'>
             <div class='program-selection__wrapper'>
-              <h2 class='program-selection__title visually-hidden'>Выбор программы</h2>
+              <h2 class='program-selection__title visually-hidden' tabindex="0">Выбор программы</h2>
               <fieldset class='program-selection__group'>
-                <input class='program-selection__toggle' value='Похудение' type='radio' name='programm' id='losing'>
+                <input class='visually-hidden program-selection__toggle' value='Похудение' type='radio' name='programm' id='losing'>
                 <label class='program-selection__name' for='losing'>Похудение</label>
-                <input class='program-selection__toggle' value='Набор массы' type='radio' name='programm' id='weight'>
+                <input class='visually-hidden program-selection__toggle' value='Набор массы' type='radio' name='programm' id='weight'>
                 <label class='program-selection__name' for='weight'>Набор массы</label>
-                <input class='program-selection__toggle' value='Не знаю (Нужен ваш совет)' type='radio' name='programm' id='help'>
+                <input class='visually-hidden program-selection__toggle' value='Не знаю (Нужен ваш совет)' type='radio' name='programm' id='help' tabindex="0">
                 <label class='program-selection__name' for='help'>Не знаю (Нужен ваш совет)</label>
               </fieldset>
 
@@ -84,7 +84,7 @@
           <section class='data-owner'>
 
             <div class='data-owner__wrapper'>
-              <h2 class='data-owner__title'>Контактные данные (владельца кота)</h2>
+              <h2 class='data-owner__title' tabindex="0">Контактные данные (владельца кота)</h2>
               <fieldset class='data-owner__group'>
                 <div class='data-owner__box'>
                   <label class='data-owner__name data-owner__name--size' for='email'>E-mail:</label>
@@ -109,7 +109,7 @@
         <section class='comment'>
 
           <div class='comment__wrapper'>
-            <h2 class='comment__title'>Комментарий</h2>
+            <h2 class='comment__title' tabindex="0">Комментарий</h2>
             <textarea class='comment__input' placeholder='Расскажите обо всех повадках кота'></textarea>
           </div>
         </section>
@@ -117,16 +117,28 @@
         <section class='additionally'>
 
           <div class='additionally__wrapper'>
-            <h2 class='additionally__title'>Дополнительно</h2>
+            <h2 class='additionally__title' tabindex="0">Дополнительно</h2>
             <fieldset class='additionally__group'>
-              <input class='additionally__toggle' value='Сахарозаменитель' type='checkbox' name='additionally' id='sweetener'>
-              <label class='additionally__name' for='sweetener'>Сахарозаменитель</label>
-              <input class='additionally__toggle' value='Питьевая вода' type='checkbox' name='additionally' id='water'>
-              <label class='additionally__name' for='water'>Питьевая вода</label>
-              <input class='additionally__toggle' value='Молоко' type='checkbox' name='additionally' id='milk'>
-              <label class='additionally__name' for='milk'>Молоко</label>
-              <input class='additionally__toggle' value='Витамины' type='checkbox' name='additionally' id='vitamins'>
-              <label class='additionally__name' for='vitamins'>Витамины</label>
+
+              <label class='additionally__name' for='sweetener'>
+                <input class='visually-hidden additionally__toggle' value='Сахарозаменитель' type='checkbox' name='additionally' id='sweetener'>
+                <span class='additionally__checkbox'>Сахарозаменитель</span>
+              </label>
+
+              <label class='additionally__name' for='water'>
+                <input class='visually-hidden additionally__toggle' value='Питьевая вода' type='checkbox' name='additionally' id='water'>
+                <span class='additionally__checkbox'>Питьевая вода</span>
+              </label>
+
+              <label class='additionally__name' for='milk'>
+                <input class='visually-hidden additionally__toggle' value='Молоко' type='checkbox' name='additionally' id='milk'>
+                <span class='additionally__checkbox'>Молоко</span>
+              </label>
+
+              <label class='additionally__name' for='vitamins'>
+                <input class='visually-hidden additionally__toggle' value='Витамины' type='checkbox' name='additionally' id='vitamins'>
+                <span class='additionally__checkbox'>Витамины</span>
+              </label>
             </fieldset>
           </div>
         </section>
@@ -166,10 +178,12 @@
 
     <footer class='footer-page'>
       <div class='footer-page__wrapper'>
-        <img class='footer-page__site-name' src='img/logo.svg' alt='Cat Energy'>
+        <a class='footer-page__site-name' href='index.html'>
+          <img src='img/logo.svg' alt='Cat Energy'>
+        </a>
 
         <section class='footer-page__social social'>
-          <h3 class='visually-hidden'>Социальные сети</h3>
+          <h3 class='visually-hidden' tabindex="0">Социальные сети</h3>
           <ul class='social__list'>
             <li class='social__item'>
               <a href='#'><span class='visually-hidden'>Vkontakte</span>

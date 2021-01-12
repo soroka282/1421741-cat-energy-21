@@ -49,7 +49,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 899px;
-    padding-top: 49px;
+    padding-top: 50px;
     padding-bottom: 0;
   }
 
@@ -63,7 +63,6 @@
   margin-right: 20px;
   margin-left: 42px;
   padding-top: 0;
-  margin-top: -2px;
   border: none;
   display: flex;
   flex-wrap: wrap;
@@ -74,11 +73,12 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 33px;
+    grid-column-gap: 30px;
     grid-row-gap: 20px;
     text-align: left;
+    justify-content: center;
     min-width: 600px;
-    margin-left: 64px;
+    margin-left: 60px;
     margin-top: 40px;
   }
 
@@ -92,15 +92,14 @@
 }
 
 .additionally__toggle {
-  display: none;
   position: relative;
 
-  &:checked + .additionally__name::after {
+  &:checked + .additionally__checkbox::after {
     content: "";
     position: absolute;
     width: 18px;
     height: 18px;
-    left: -37px;
+    left: -38px;
     top: 0;
     background-image: url("../img/sprite/vector.svg");
     background-repeat: no-repeat;
@@ -109,28 +108,32 @@
     @media (min-width: $tablet-width) {
       width: 18px;
       height: 18px;
-      left: -45px;
-      top: 5px;
+      left: -42px;
+      top: 6px;
     }
 
     @media (min-width: $desktop-width) {
       width: 18px;
       height: 18px;
-      left: -50px;
-      top: 5px;
+      left: -45px;
+      top: 6px;
     }
   }
 
-  &:hover + .additionally__name::before {
+  &:hover + .additionally__checkbox::before {
     border: 1px solid $hover-checkbox;
   }
 
-  &:disabled + .additionally__name::before {
+  &:focus + .additionally__checkbox::before {
+    transform: scale(1.1);
+  }
+
+  &:disabled + .additionally__checkbox::before {
     border: 1px solid $hover-checkbox;
     opacity: 0.3;
   }
 
-  &:disabled + .additionally__name {
+  &:disabled + .additionally__checkbox {
     opacity: 0.3;
     color: $special_dark-grey-1;
     cursor: default;
@@ -145,28 +148,29 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 50px;
-    margin-right: 100px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
-    margin-left: 45px;
+    margin-left: 41px;
   }
+}
 
+.additionally__checkbox {
   &::before {
     content: "";
     position: absolute;
     width: 29px;
     height: 29px;
-    left: -45px;
-    top: -5px;
+    left: -44px;
+    top: -6px;
     border: 1px solid $special_grey;
     box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
-      left: -60px;
+      left: -55px;
     }
   }
 }

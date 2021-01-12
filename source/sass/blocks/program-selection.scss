@@ -56,7 +56,6 @@
 
 .program-selection__toggle {
   position: relative;
-  display: none;
 
   &:checked + .program-selection__name::after {
     content: "";
@@ -73,13 +72,18 @@
     @media (min-width: $tablet-width) {
       width: 18px;
       height: 18px;
-      left: -50px;
-      top: 5px;
+      left: -49px;
+      top: 8px;
     }
   }
 
   &:hover + .program-selection__name::before {
     border: 1px solid $hover-checkbox;
+  }
+
+  &:focus + .program-selection__name::after,
+  &:focus + .program-selection__name::before {
+    transform: scale(1.1);
   }
 
   &:disabled + .program-selection__name::before {

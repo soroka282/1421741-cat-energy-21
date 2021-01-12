@@ -88,7 +88,7 @@
   @media (min-width: $tablet-width) {
     @include font-set(normal, normal, 20px, 20px);
     width: 500px;
-    margin-top: 35px;
+    margin-top: 31px;
     margin-left: 0;
   }
 
@@ -107,7 +107,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     width: 709px;
-    height: 620px;
+    height: 614px;
     top: -174px;
     z-index: -1;
     margin-right: 75px;

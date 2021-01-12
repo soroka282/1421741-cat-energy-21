@@ -18,13 +18,13 @@
             <picture>
               <source media='(min-width: 1440px)' srcset='img/logodesktop.svg'>
               <source media='(min-width: 768px)' srcset='img/logotablet.svg'>
-              <img class='page-header__logo' src='img/logomobile.svg' alt='Логотип сайта'>
+              <img class='page-header__logo' src='img/logomobile.svg' alt='Логотип сайта' tabindex="0">
             </picture>
           </a>
           <a href='index.html'>
-            <img class='page-header__site-name' src='img/logo.svg' alt='Cat energy'>
+            <img class='page-header__site-name' src='img/logo.svg' alt='Cat energy' tabindex="0">
           </a>
-          <button class='page-header__toggle page-header__toggle--opened page-header__toggle--hidden' type='button'><span class='visually-hidden'>закрыть меню</span></button>
+          <button class='page-header__toggle page-header__toggle--opened page-header__toggle--hidden' type='button'><span class='visually-hidden'>меню</span></button>
         </div>
         <nav class='main-nav'>
           <ul class='main-nav__list site-list site-list--close site-list--no-js'>
@@ -38,7 +38,7 @@
 
     <main class='main-page'>
       <div class='main-page__inner'>
-        <h1 class='main-page__title'>Каталог продукции</h1>
+        <h1 class='main-page__title' tabindex="0">Каталог продукции</h1>
       </div>
       <section class='food-cat'>
         <div class='food-cat__border-box'>
@@ -302,7 +302,7 @@
         <div class='food-cat__border-box'>
         <div class='food-cat__wrapper'>
           <div class='food-cat__box'>
-            <p class='food-cat__more'>Показать еще<br> 100500 товаров</p>
+            <p class='food-cat__more' tabindex="0">Показать еще<br> 100500 товаров</p>
             <p class='food-cat__more-caption'>На самом деле вкусов<br> гораздо больше!</p>
             <a class='food-cat__more-link' href='#'>Показать все</a>
           </div>
@@ -313,12 +313,12 @@
       <div class='main-page__box-gift-goods'>
         <section class='add-product'>
           <div class='add-product__box'>
-            <h2 class='add-product__title'>Дополнительные товары</h2>
+            <h2 class='add-product__title' tabindex="0">Дополнительные товары</h2>
           </div>
           <div class='add-product__wrapper'>
             <div class='add-product__inner'>
               <table class='add-product__table product-table'>
-                <caption class='product-table__name'>Сахарозаменитель</caption>
+                <caption class='product-table__name' tabindex="0">Сахарозаменитель</caption>
                 <tr class='product-table__string'>
                   <td class='product-table__quantity'>1 упаковка (100 г)</td>
                   <td class='product-table__cost'>200 Р.</td>
@@ -331,7 +331,7 @@
           <div class='add-product__wrapper'>
             <div class='add-product__inner'>
               <table class='add-product__table product-table'>
-                <caption class='product-table__name'>Питьевая вода</caption>
+                <caption class='product-table__name' tabindex="0">Питьевая вода</caption>
                 <tr class='product-table__string'>
                   <td class='product-table__quantity'>5 литров </td>
                   <td class='product-table__cost'>50 Р.</td>
@@ -344,7 +344,7 @@
           <div class='add-product__wrapper'>
             <div class='add-product__inner'>
               <table class='add-product__table product-table'>
-                <caption class='product-table__name'>Молоко</caption>
+                <caption class='product-table__name' tabindex="0">Молоко</caption>
                 <tr class='product-table__string'>
                   <td class='product-table__quantity'>1 литр</td>
                   <td class='product-table__cost'>100 Р.</td>
@@ -357,7 +357,7 @@
           <div class='add-product__wrapper'>
             <div class='add-product__inner'>
               <table class='add-product__table product-table'>
-                <caption class='product-table__name'>Витамины</caption>
+                <caption class='product-table__name' tabindex="0">Витамины</caption>
                 <tr class='product-table__string'>
                   <td class='product-table__quantity'>1 упаковка (30 г)</td>
                   <td class='product-table__cost'>300 Р.</td>
@@ -371,7 +371,7 @@
 
         <section class='gift'>
           <div class='gift__wrapper'>
-            <h2 class='visually-hidden'>Подарок за покупку</h2>
+            <h2 class='visually-hidden' tabindex="0">Подарок за покупку</h2>
             <div class='gift__inner'>
               <p class='gift__text'>Закажите все<br>
                 и получите чехол для
@@ -408,10 +408,11 @@
 
     <footer class='footer-page'>
       <div class='footer-page__wrapper'>
-        <img class='footer-page__site-name' src='img/logo.svg' alt='Cat Energy'>
-
+        <a class='footer-page__site-name' href='index.html' tabindex="0">
+          <img src='img/logo.svg' alt='Cat Energy'>
+        </a>
         <section class='footer-page__social social'>
-          <h3 class='visually-hidden'>Социальные сети</h3>
+          <h3 class='visually-hidden' tabindex="0">Социальные сети</h3>
           <ul class='social__list'>
             <li class='social__item'>
               <a href='#'><span class='visually-hidden'>Vkontakte</span>
