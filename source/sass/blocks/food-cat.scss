@@ -182,6 +182,10 @@
 
 .food-cat__toggle {
   @include font-set (normal, normal, 16px, 20px);
+  text-align: center;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   min-width: 280px;
   grid-column: 1/3;
   grid-row: 3/4;

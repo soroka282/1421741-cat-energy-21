@@ -125,6 +125,10 @@
 
 .add-product__toggle {
   @include font-set (normal, normal, 16px, 20px);
+  text-align: center;
+  height: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   min-width: 280px;
   margin-top: 10px;
   margin-bottom: 15px;

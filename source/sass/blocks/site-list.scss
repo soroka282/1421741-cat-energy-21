@@ -109,7 +109,7 @@
 }
 
 
-.site-item--index-color {
+.site-list__item--index-color {
   & a {
     @media (min-width: $desktop-width) {
       color: $basic_white;

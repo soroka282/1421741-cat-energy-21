@@ -24,13 +24,13 @@ const SliderImageCatFat = document.querySelector('.example__cat-fat');
 SliderToggleNext.addEventListener('click', function() {
   SliderRangeShow.classList.add('example__slider-toggle--next-active');
   SliderRangeShow.classList.remove('example__slider-toggle--prev-active');
-  SliderImageCatSlim.classList.remove('example__cat--hidden');
-  SliderImageCatFat.classList.add('example__cat--hidden');
+  SliderImageCatSlim.classList.remove('example__cat-hidden');
+  SliderImageCatFat.classList.add('example__cat-hidden');
 })
 
 SliderTogglePrev.addEventListener('click', function() {
   SliderRangeShow.classList.remove('example__slider-toggle--next-active');
   SliderRangeShow.classList.add('example__slider-toggle--prev-active');
-  SliderImageCatSlim.classList.add('example__cat--hidden');
-  SliderImageCatFat.classList.remove('example__cat--hidden');
+  SliderImageCatSlim.classList.add('example__cat-hidden');
+  SliderImageCatFat.classList.remove('example__cat-hidden');
 })
