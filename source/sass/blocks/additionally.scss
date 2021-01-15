@@ -126,6 +126,7 @@
 
   &:focus + .additionally__checkbox::before {
     transform: scale(1.1);
+    border: 1px solid $basic_green;
   }
 
   &:disabled + .additionally__checkbox::before {
